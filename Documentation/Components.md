@@ -1,4 +1,4 @@
-# Light Sensor Circuit
+# Components
 The LDR needs to be read with an ADC then sent to the RPI.
 
 ## LDR
