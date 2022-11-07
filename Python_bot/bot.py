@@ -41,6 +41,6 @@ def hallo(message):
     # Meting
     humidity, temperature = Adafruit_DHT.read_retry(dht_sensor, gpio)
     # Meting sturen via telegram
-    bot.reply_to(message, 'Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity))
+    bot.reply_to(message, 'Temp={0:0.1f}°C  Humidity={1:0.1f}%'.format(temperature, humidity))
 
 bot.polling()
