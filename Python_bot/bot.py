@@ -20,6 +20,7 @@ def hallo(message):
 def hallo(message):
     bot.reply_to(message, "Foto is onderweg...")
     camera.capture('/home/pem/Desktop/pem_python/image.jpg')
+    bot.send_photo(chat_id, photo=open('/home/pem/Desktop/pem_python/image.jpg', 'rb'))
     
 
 bot.polling()
