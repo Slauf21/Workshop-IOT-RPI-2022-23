@@ -6,11 +6,11 @@ TOKEN = "5574596927:AAE4WXBSZbe0N6eIdlxHIfKe32hQfjJEThE"
 API_KEY = '5574596927:AAE4WXBSZbe0N6eIdlxHIfKe32hQfjJEThE'
 chat_id = "5452220589"
 
+bot = telebot.TeleBot(API_KEY)
+
 # Resolutie camera instellen
 camera = PiCamera()
 camera.resolution = (640,480)
-
-bot = telebot.TeleBot(API_KEY)
 
 @bot.message_handler(commands=['hallo'])
 def hallo(message):
