@@ -1,5 +1,4 @@
 # Components
-The LDR needs to be read with an ADC then sent to the RPI.
 
 ## LDR
 LDR: https://www.gotron.be/ldr-photoresistor-100mw-50-160kohm.html
