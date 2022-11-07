@@ -14,5 +14,5 @@ Datasheet: https://pdf1.alldatasheet.com/datasheet-pdf/view/28912/TI/TLC549.html
 
 ![image](https://user-images.githubusercontent.com/79916416/197496335-5483d1d2-a319-4482-ad6b-eb48fd0b88e4.png)
 
-### Working Principle
+## 
 
