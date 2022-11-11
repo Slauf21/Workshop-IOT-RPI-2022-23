@@ -1,5 +1,5 @@
 # Components
-All components are listed in the bill of materials which you can find [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/main/Documents/BOM.xlsx)
+All components are listed in the bill of materials which you can find [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/tree/main/Circuit/Bill%20Of%20Materials)
 
 ## LDR
 LDR: https://www.gotron.be/ldr-photoresistor-100mw-50-160kohm.html
