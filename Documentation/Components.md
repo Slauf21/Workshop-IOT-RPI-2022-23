@@ -1,4 +1,5 @@
 # Components
+All components are listed in the bill of materials which you can find [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/main/Documents/BOM.xlsx)
 
 ## LDR
 LDR: https://www.gotron.be/ldr-photoresistor-100mw-50-160kohm.html
@@ -14,5 +15,5 @@ Datasheet: https://pdf1.alldatasheet.com/datasheet-pdf/view/28912/TI/TLC549.html
 
 ![image](https://user-images.githubusercontent.com/79916416/197496335-5483d1d2-a319-4482-ad6b-eb48fd0b88e4.png)
 
-### Working Principle
+## 
 
