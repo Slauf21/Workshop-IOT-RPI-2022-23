@@ -29,3 +29,12 @@ This relais has a coil which powers at 5V and 106mA. It has a coil resistance of
 A transistor is needed because the GPIO pins of the RPI cant drive the coil of the relais. The 5V pin can. So a BJT npn transistor is used as a switch, controlled by the RPI gpio.
 
 ![image](https://user-images.githubusercontent.com/79916416/201316302-7d30c3cb-90a4-4755-af86-603813e2542b.png)
+
+## Resistors
+
+Some resistors are needed in the circuits.
+
+|Value|Amount|
+|-----|---|
+| 10K | 2 |
+| 910 | 1 |
