@@ -15,5 +15,17 @@ Datasheet: https://pdf1.alldatasheet.com/datasheet-pdf/view/28912/TI/TLC549.html
 
 ![image](https://user-images.githubusercontent.com/79916416/197496335-5483d1d2-a319-4482-ad6b-eb48fd0b88e4.png)
 
-## 
+## Relais
+G5PZ-1A-E 5VDC: https://www.mouser.be/ProductDetail/653-G5PZ-1A-EDC5
 
+This relais has a coil which powers at 5V and 106mA. It has a coil resistance of 47 ohm. The relais will be used to control an external, higher voltage circuit that the Rpi cant controll with its GPIOs.
+
+![image](https://user-images.githubusercontent.com/79916416/201310495-3af5b13c-349c-4b45-966b-4f8a19eecf09.png)
+
+## Transistor
+
+2n2222a: https://www.mouser.be/ProductDetail/Diotec-Semiconductor/2N2222A?qs=OlC7AqGiEDmNlRSTGL2dYg%3D%3D&gclid=Cj0KCQiAgribBhDkARIsAASA5btApKR5Wi0awd6l1xYTlflaXAFN-934qWyK9pfrrR_6dCfe9-h9G84aAgFrEALw_wcB
+
+A transistor is needed because the GPIO pins of the RPI cant drive the coil of the relais. The 5V pin can. So a BJT npn transistor is used as a switch, controlled by the RPI gpio.
+
+![image](https://user-images.githubusercontent.com/79916416/201316302-7d30c3cb-90a4-4755-af86-603813e2542b.png)
