@@ -12,24 +12,28 @@
 <ins> Python code </ins>
 
 #### Import libraries
+Some necessary libraries. Telebot is a Telegram bot library.
 
 [![libs.png](https://i.postimg.cc/q70Y7h0k/libs.png)](https://postimg.cc/QF4S4MHP)
 
-### Key
+#### Key
+Declaration of the personal token and initializes a connection to the bot.
 
 [![key.png](https://i.postimg.cc/T3VWDXtc/key.png)](https://postimg.cc/75LLFj8C)
 
 [![key-telebot.png](https://i.postimg.cc/0NNDRBCd/key-telebot.png)](https://postimg.cc/k2kBWwzB)
 
-### Pi camera
+#### Pi camera
+Then we create an object from the PiCamera class. When we create this object, the camera will start initializing itself. The resolution is also initialized.
 
 [![picam.png](https://i.postimg.cc/Fs9KBJp0/picam.png)](https://postimg.cc/SjvqXRwK)
 
-### DHT 11
+#### DHT 11
+Create a DHT object from the Adafruit_DHT class. Gpio refers to the data pin of the sensor.
 
 [![dht11.png](https://i.postimg.cc/P50TTLW3/dht11.png)](https://postimg.cc/3kjPZxbm)
 
-### Commands
+#### Commands
 
 [![commands.png](https://i.postimg.cc/15jZrgjm/commands.png)](https://postimg.cc/hfTwSGn6)
 
