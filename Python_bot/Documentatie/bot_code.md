@@ -26,6 +26,8 @@ Declaration of the personal token and initializes a connection to the bot.
 #### Pi camera
 Then we create an object from the PiCamera class. When we create this object, the camera will start initializing itself. The resolution is also initialized.
 
+*To use the PiCamera module, you will need to enable legacy support for the camera. (sudo raspi-config)*
+
 [![picam.png](https://i.postimg.cc/Fs9KBJp0/picam.png)](https://postimg.cc/SjvqXRwK)
 
 #### DHT 11
