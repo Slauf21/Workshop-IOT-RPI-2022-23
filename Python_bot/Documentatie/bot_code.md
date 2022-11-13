@@ -12,14 +12,32 @@
 <ins> Python code </ins>
 
 #### Import libraries
+
 [![libs.png](https://i.postimg.cc/q70Y7h0k/libs.png)](https://postimg.cc/QF4S4MHP)
 
+### Key
+
+[![key.png](https://i.postimg.cc/T3VWDXtc/key.png)](https://postimg.cc/75LLFj8C)
+
+[![key-telebot.png](https://i.postimg.cc/0NNDRBCd/key-telebot.png)](https://postimg.cc/k2kBWwzB)
+
+### Pi camera
+
+[![picam.png](https://i.postimg.cc/Fs9KBJp0/picam.png)](https://postimg.cc/SjvqXRwK)
+
+### DHT 11
+
+[![dht11.png](https://i.postimg.cc/P50TTLW3/dht11.png)](https://postimg.cc/3kjPZxbm)
+
+### Commands
+
+[![commands.png](https://i.postimg.cc/15jZrgjm/commands.png)](https://postimg.cc/hfTwSGn6)
 
 <ins> Results </ins>
 
-Taking a picture with pi camera:
+Taking a picture with Pi camera:
 
-![](https://user-images.githubusercontent.com/79916493/200285784-fa2740fd-4e03-4b89-87bc-48041abbb552.PNG)
+[![foto.png](https://i.postimg.cc/5tfpHgS6/foto.png)](https://postimg.cc/xXFLhK72)
 
 Measuring the temperature/humidity with DHT11:
 
