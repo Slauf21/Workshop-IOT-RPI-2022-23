@@ -36,7 +36,7 @@ Create a DHT object from the Adafruit_DHT class. Gpio refers to the data pin of 
 [![dht11.png](https://i.postimg.cc/P50TTLW3/dht11.png)](https://postimg.cc/3kjPZxbm)
 
 #### Commands
-The first command send a fix reply when the user send 'hallo'. When the second command is called, the Pi camera takes a picture and saves it to the specified path. After this, the picture will be sent as reply. The third command takes care of the measurement of temperature and humidity. The measuring will also be sent as reply.
+The first command sends a fix reply when the user sends 'hallo'. When the second command is called, the Pi camera takes a picture and saves it to the specified path. After this, the picture will be sent as reply. The third command takes care of the measurement of temperature and humidity. The measuring will also be sent as reply.
 
 [![commands.png](https://i.postimg.cc/15jZrgjm/commands.png)](https://postimg.cc/hfTwSGn6)
 
