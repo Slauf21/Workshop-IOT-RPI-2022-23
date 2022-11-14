@@ -4,7 +4,7 @@ Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar 
 
 # Inhoudstabel
 
-- [1. Installeren en Configureren Raspberry Pi](#Installeren-en-Configureren-Raspberry-Pi)
+- [1. Installeren en Configureren Raspberry Pi](#1-installeren-en-configureren-raspberry-pi)
   - [1.1. Installeren Raspberry Pi OS](1.1.-Installeren-Raspberry-Pi-OS)
   - [1.2. Raspberry Pi verbinden met WiFi](1.2.-Raspberr-Pi-verbinden-met-WiFi)
   - [1.3. Configureren Raspberry Pi](1.3.-Configureren-Raspberry-Pi)
