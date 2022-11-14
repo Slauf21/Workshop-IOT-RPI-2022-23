@@ -27,7 +27,7 @@ Steek de SD kaart in je computer en open de imager. Bij het openen van de imager
 
 Hier ga je op "CHOOSE OS" klikken en selecteer je Raspberry Pi OS (32-bit). Daarna kies je de SD kaart waarop je de OS wilt zetten. Dit gebeurt door op de "CHOOSE STORAGE" knop te klikken. Je SD kaart zal daar staan en die moet je dan selecteren.
 
-Wanneer je de melding krijgt dat het schrijven van de image succesvol afgerond is mag je de kaart verwijderen uit je PC en in de Raspberry PI plaatsen. Sluit vervolgens het toetsenbord, muis, camera, HDMI scherm, en sensor bord aan.
+Wanneer je de melding krijgt dat het schrijven van de image succesvol afgerond is mag je de kaart verwijderen uit je PC en in de Raspberry PI plaatsen. Sluit vervolgens het toetsenbord, muis, camera, HDMI scherm, en sensor bord aan. De sensoren bord is al gemaakt tijdens de workshop. Als je deze zelf wil maken kan je [hier](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/main/Circuit/PCB.md) meer informatie vinden.
 
 Nu is de Raspberry Pi klaargezet en moet hij geconfigureerd worden.
 
