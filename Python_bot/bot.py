@@ -18,7 +18,12 @@ camera.resolution = (640,480)
 # DHT declareren
 dht_sensor = Adafruit_DHT.DHT11
 # GPIO voor dht sensor
-gpio = 18
+gpio_sensor = 18
+
+# Relais declareren
+GPIO.setmode(GPIO.BCM)
+gpio_relais = 21
+GPIO.setup(gpio_relais, GPIO.OUT)
 
 # Commondo voor simpele reply
 @bot.message_handler(commands=['hallo'])
@@ -39,8 +44,20 @@ def hallo(message):
 def hallo(message):
     bot.reply_to(message, "Temperatuur wordt gemeten...")
     # Meting
-    humidity, temperature = Adafruit_DHT.read_retry(dht_sensor, gpio)
+    humidity, temperature = Adafruit_DHT.read_retry(dht_sensor, gpio_sensor)
     # Meting sturen via telegram
     bot.reply_to(message, 'Temp={0:0.1f}°C  Humidity={1:0.1f}%'.format(temperature, humidity))
+
+# Commondo voor aanzetten relais
+@bot.message_handler(commands=['relais_aan'])
+def hallo(message):
+    bot.reply_to(message, "Relais wordt aangezet")
+    GPIO.output(gpio_relais, GPIO.HIGH)
+
+# Commondo voor uitzetten relais
+@bot.message_handler(commands=['relais_uit'])
+def hallo(message):
+    bot.reply_to(message, "Relais wordt uitgezet")
+    GPIO.output(gpio_relais, GPIO.LOW)
 
 bot.polling()
