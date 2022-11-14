@@ -1,7 +1,15 @@
-# Components
-
+# Hardware
 TO BE UPDATED
 
+## RPI componenten
+| Component         | Beschrijving        | Aantal |
+|-------------------|---------------------|--------|
+| RPI 3b            | Raspberry Pi 3b     | 1      |
+| 16GB SD           | SD kaart 16GB       | 1      |
+| RPI camera        | Raspberry Pi Camera | 1      |
+| Micro USB adapter | Micro USB Adapter   | 1      |
+
+## Circuit componenten
 | Component      | Beschrijving                        | Hoeveelheid |
 |----------------|-------------------------------------|-------------|
 | DHT-11         | Temperatuur-Luchtvochtigheid sensor | 1           |
