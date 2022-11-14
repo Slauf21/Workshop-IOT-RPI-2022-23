@@ -48,3 +48,5 @@ De Raspberry is nu verbonden met het wifi netwerkt en er werd door de router een
 # 2. Aanmaken van Telegram Bot
 
 # 3. Schrijven van de code
+
+Nu alles ingesteld is kan begonnen worden met het schrijven van de code. Om dit te doen gebruiken we een laptop met daarop een code editor. We gebruiken de [notepad++ editor](https://notepad-plus-plus.org/). We moeten ook de geschreven code op de Raspberry Pi krijgen
