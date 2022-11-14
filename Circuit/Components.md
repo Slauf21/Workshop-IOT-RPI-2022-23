@@ -2,8 +2,6 @@
 
 TO BE UPDATED
 
-All components are listed in the bill of materials which you can find [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/tree/main/Circuit/Bill%20Of%20Materials)
-
 | Component      | Beschrijving                        | Hoeveelheid |
 |----------------|-------------------------------------|-------------|
 | DHT-11         | Temperatuur-Luchtvochtigheid sensor | 1           |
