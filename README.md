@@ -22,7 +22,7 @@ Wanneer je de melding krijgt dat het schrijven van de image succesvol afgerond i
 
 Nu is de Raspberry Pi klaargezet en moet hij geconfigureerd worden.
 
-## 1.2. Configureren Raspberry Pi
+## 1.2. Raspberry Pi verbinden met WiFi
 
 Start de Raspberry PI Zero op en klik recht boven op het wifi icoontje (1), controleer vervolgens of de wifi ingeschakeld is (2) en selecteer daarna het gewenste netwerk (3). Er zal nu een melding komen om een wachtwoord in te geven (4). Kies na het ingeven van het wachtwoord ten slotte voor OK (5).
 
@@ -32,4 +32,8 @@ De Raspberry is nu verbonden met het wifi netwerkt en er werd door de router een
 
 ![image](https://user-images.githubusercontent.com/79916416/201632807-cfd7bbc9-b4fc-4ae6-9ba2-312468fa495d.png)
 
+## 1.3. Configureren Raspberry Pi
+
 !!!HIER KOMT RPI INSTELLEN MET SCRIPT, SCRIPT MOET NOG AANGEPAST WORDEN!!!
+
+# 2. Aanmaken van Telegram Bot
