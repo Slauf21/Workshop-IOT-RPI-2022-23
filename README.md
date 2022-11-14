@@ -37,3 +37,5 @@ De Raspberry is nu verbonden met het wifi netwerkt en er werd door de router een
 !!!HIER KOMT RPI INSTELLEN MET SCRIPT, SCRIPT MOET NOG AANGEPAST WORDEN!!!
 
 # 2. Aanmaken van Telegram Bot
+
+# 3. Schrijven van de code
