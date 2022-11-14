@@ -5,6 +5,11 @@ Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar 
 # Inhoudstabel
 
 - [1. Installeren en Configureren Raspberry Pi](#1.-Installeren-en-Configureren-Raspberry-Pi)
+  - [1.1. Installeren Raspberry Pi OS](#1.1.-Installeren-Raspberry-Pi-OS)
+  - [1.2. Raspberry Pi verbinden met WiFi](#1.2.-Raspberr-Pi-verbinden-met-WiFi)
+  - [1.3. Configureren Raspberry Pi](#1.3.-Configureren-Raspberry-Pi)
+- [2. Aanmaken van Telegram Bot](#2.-Aanmaken-van-Telegram-Bot)
+- [3. Schrijven van de code](#3.-Schrijven-van-de-code)
 
 # 1. Installeren en Configureren Raspberry Pi
 
