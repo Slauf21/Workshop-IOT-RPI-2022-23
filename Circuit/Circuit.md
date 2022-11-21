@@ -19,7 +19,7 @@ TO BE UPDATED
 | 2x20           | RPI Header                          | 1           |
 | 1n4007g        | Flyback Diode                       | 1           |
 | 10kohm         | Weerstand                           | 2           |
-| 910ohm         | Weerstand                           | 1           |
+| 1.2kohm        | Weerstand                           | 1           |
 | SGP30          | Gas Sensor                          | 1           |
 | MAX 4466       | Microfoon                           | 1           |
 | TCS34725       | RGB sensor                          | 1           |
