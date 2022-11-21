@@ -1,4 +1,4 @@
-# Hardware
+# Circuit
 TO BE UPDATED
 
 ## RPI componenten
@@ -24,3 +24,7 @@ TO BE UPDATED
 | MAX 4466       | Microfoon                           | 1           |
 | TCS34725       | RGB sensor                          | 1           |
 | SSOP8          | SPI-ADC                             | 1           |
+
+## Schematic 
+
+Read about how the pins of the circuit are connected and how it is designed [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/edit/main/Circuit/Altium/Schematics.md).
