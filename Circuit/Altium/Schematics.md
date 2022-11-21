@@ -77,3 +77,7 @@ To do this press **Tools** -> **Symbol Wizard** in the toolbar. A new window wil
 Then **Place** -> **Place New Symbol**
 
 In the SCH LIB window select the icon and press place. Place it somewhere on the schematic. Double click it and give it the name J1
+
+## Sensors
+
+The same process needs to be repeated for the sensor headers. This is a 5x1, 3x1 and 2 times 1x4 headers. When creating a one dimensional header like a 4x1. Select 8 pins for the DIP and remove one of the sides.
