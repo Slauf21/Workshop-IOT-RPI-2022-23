@@ -4,10 +4,11 @@ import os
 from picamera import PiCamera, Color
 import Adafruit_DHT
 import RPi.GPIO as GPIO
+import time
+import asyncio
 
-TOKEN = "5574596927:AAE4WXBSZbe0N6eIdlxHIfKe32hQfjJEThE"
 API_KEY = '5574596927:AAE4WXBSZbe0N6eIdlxHIfKe32hQfjJEThE'
-chat_id = "5452220589"
+chat_id = '5452220589'
 
 bot = telebot.TeleBot(API_KEY)
 
@@ -21,9 +22,15 @@ dht_sensor = Adafruit_DHT.DHT11
 gpio_sensor = 18
 
 # Relais declareren
-GPIO.setmode(GPIO.BCM)
+"""GPIO.setmode(GPIO.BCM)
 gpio_relais = 21
-GPIO.setup(gpio_relais, GPIO.OUT)
+GPIO.setup(gpio_relais, GPIO.OUT)"""
+
+# Bewegingssensor declareren
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+PIR_PIN = 24
+GPIO.setup(PIR_PIN, GPIO.IN, GPIO.PUD_DOWN)
 
 # Commondo voor simpele reply
 @bot.message_handler(commands=['hallo'])
@@ -59,5 +66,18 @@ def hallo(message):
 def hallo(message):
     bot.reply_to(message, "Relais wordt uitgezet")
     GPIO.output(gpio_relais, GPIO.LOW)
+
+# Aansturen beweginssensor
+try:
+  while True:
+    if(GPIO.input(PIR_PIN) == 0):
+        print()
+    elif(GPIO.input(PIR_PIN) == 1):
+        bot.reply_to(message, "Beweging gedetecteerd -> dief!!!!!!!")
+    time.sleep(1)
+
+except KeyboardInterrupt:
+  print('interrupted!')
+  GPIO.cleanup()
 
 bot.polling()
