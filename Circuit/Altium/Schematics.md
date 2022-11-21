@@ -81,3 +81,6 @@ In the SCH LIB window select the icon and press place. Place it somewhere on the
 ## Sensors
 
 The same process needs to be repeated for the sensor headers. This is a 5x1, 3x1 and 2 times 1x4 headers. When creating a one dimensional header like a 4x1. Select 8 pins for the DIP and remove one of the sides.
+
+![image](https://user-images.githubusercontent.com/79916416/203020430-e598ac47-6891-48d0-930e-a5f1950e097c.png)
+
