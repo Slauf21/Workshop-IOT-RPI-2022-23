@@ -103,3 +103,13 @@ The relais has a much different pin design the a header or terminal.
 
 ![image](https://user-images.githubusercontent.com/79916416/203024929-793bfb97-0f3d-41aa-8f30-005dc7d58e82.png)<br>
 *Relais Measurements*
+
+![image](https://user-images.githubusercontent.com/79916416/203032334-16b1f4ef-4d3c-4462-a36e-10234f138adf.png)<br>
+*Footprint*
+
+The distance is the distance that was written in mm in the datasheet converted to mils.
+
+![image](https://user-images.githubusercontent.com/79916416/203032510-4f5602a5-f81a-467d-876f-e5073b929eda.png)<br>
+*Schematic Icon*
+
+The schematic icon pin numbering is the same as the pins on the datasheet of the relais.
