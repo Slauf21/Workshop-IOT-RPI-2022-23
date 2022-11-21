@@ -27,4 +27,4 @@ TO BE UPDATED
 
 ## Schematic 
 
-Read about how the pins of the circuit are connected and how it is designed [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/edit/main/Circuit/Altium/Schematics.md).
+Read about how the pins of the circuit are connected and how it is designed [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/main/Circuit/Altium/Schematics.md).
