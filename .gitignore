@@ -22,4 +22,21 @@ Backup of *.doc*
 # Visio autosave temporary files
 *.~vsd*
 
-# End of https://www.toptal.com/developers/gitignore/api/microsoftoffice
+### Altium ###
+# Previews Folders
+**/__Previews/
+
+# History Folders
+**/History/*
+
+# Project Logs
+Project\ Logs*/
+
+# Project Outputs
+Project\ Outputs*/
+
+# Auto-conversion notices
+*.PcbDoc.htm
+
+# Access lock file for dbLib sources
+**/*.ldb
