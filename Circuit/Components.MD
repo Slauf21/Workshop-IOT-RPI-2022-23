@@ -24,3 +24,7 @@ TO BE UPDATED
 | 10kohm         | Weerstand                           | 2           |
 | 910ohm         | Weerstand                           | 1           |
 |                | Accelerometer Module                | 1           |
+| SGP30          | Gas Sensor                          | 1           |
+| MAX 4466       | Microfoon                           | 1           |
+| TCS34725       | RGB sensor                          | 1           |
+| SSOP8          | SPI-ADC                             | 1           |
