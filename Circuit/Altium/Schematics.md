@@ -82,5 +82,24 @@ In the SCH LIB window select the icon and press place. Place it somewhere on the
 
 The same process needs to be repeated for the sensor headers. This is a 5x1, 3x1 and 2 times 1x4 headers. When creating a one dimensional header like a 4x1. Select 8 pins for the DIP and remove one of the sides.
 
-![image](https://user-images.githubusercontent.com/79916416/203020430-e598ac47-6891-48d0-930e-a5f1950e097c.png)
+![image](https://user-images.githubusercontent.com/79916416/203021777-bb5b9310-5cbb-4a27-8611-6c42e9a493c4.png)
 
+## Screw Terminals
+
+The screw terminals dont have the same measurments as pin headers. 
+
+![image](https://user-images.githubusercontent.com/79916416/203022143-64acddcc-53fc-4086-95aa-b112e071dcbb.png)<br>
+*Screw Terminal Header*
+
+![image](https://user-images.githubusercontent.com/79916416/203023751-d26eb459-ec07-4451-94cb-20c3781e8cfc.png)<br>
+*Hole Measurements*
+
+![image](https://user-images.githubusercontent.com/79916416/203024502-cf9d76ab-16a7-4916-b683-28a7f4d2c2f5.png)<br>
+*On Schematic*
+
+## Relais
+
+The relais has a much different pin design the a header or terminal. 
+
+![image](https://user-images.githubusercontent.com/79916416/203024929-793bfb97-0f3d-41aa-8f30-005dc7d58e82.png)<br>
+*Relais Measurements*
