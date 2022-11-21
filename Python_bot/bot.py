@@ -6,6 +6,7 @@ import Adafruit_DHT
 import RPi.GPIO as GPIO
 import time
 import asyncio
+from gpiozero import MotionSensor
 
 API_KEY = '5574596927:AAE4WXBSZbe0N6eIdlxHIfKe32hQfjJEThE'
 chat_id = '5452220589'
@@ -22,15 +23,12 @@ dht_sensor = Adafruit_DHT.DHT11
 gpio_sensor = 18
 
 # Relais declareren
-"""GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BCM)
 gpio_relais = 21
-GPIO.setup(gpio_relais, GPIO.OUT)"""
+GPIO.setup(gpio_relais, GPIO.OUT)
 
 # Bewegingssensor declareren
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-PIR_PIN = 24
-GPIO.setup(PIR_PIN, GPIO.IN, GPIO.PUD_DOWN)
+pir = MotionSensor(24)
 
 # Commondo voor simpele reply
 @bot.message_handler(commands=['hallo'])
@@ -67,17 +65,29 @@ def hallo(message):
     bot.reply_to(message, "Relais wordt uitgezet")
     GPIO.output(gpio_relais, GPIO.LOW)
 
-# Aansturen beweginssensor
-try:
-  while True:
-    if(GPIO.input(PIR_PIN) == 0):
-        print()
-    elif(GPIO.input(PIR_PIN) == 1):
-        bot.reply_to(message, "Beweging gedetecteerd -> dief!!!!!!!")
-    time.sleep(1)
+# Commondo voor uitzetten relais
+@bot.message_handler(commands=['motion_aan'])
+def hallo(message):
+    motion_det()
+    bot.reply_to(message, "Bewegingssensor wordt aagezet")
 
-except KeyboardInterrupt:
-  print('interrupted!')
-  GPIO.cleanup()
+# Commondo voor uitzetten relais
+@bot.message_handler(commands=['motion_uit'])
+def hallo(message):
+    bot.reply_to(message, "Bewegingssensor wordt uitgezet")
+
+# Aansturen beweginssensor
+def motion_det():
+    try:
+        while True:
+            if pir.motion_detected:
+                bot.send_message(chat_id, text = "Beweging gedetecteerd -> dief!!!!!!!" + " " + (time.strftime("%H:%M:%S")))
+                time.sleep(3)
+            else:
+                time.sleep(3)
+
+    except KeyboardInterrupt:
+        print('interrupted!')
+
 
 bot.polling()
