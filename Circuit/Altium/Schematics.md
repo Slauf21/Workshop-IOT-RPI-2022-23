@@ -96,3 +96,10 @@ The screw terminals dont have the same measurments as pin headers.
 
 ![image](https://user-images.githubusercontent.com/79916416/203024502-cf9d76ab-16a7-4916-b683-28a7f4d2c2f5.png)<br>
 *On Schematic*
+
+## Relais
+
+The relais has a much different pin design the a header or terminal. 
+
+![image](https://user-images.githubusercontent.com/79916416/203024929-793bfb97-0f3d-41aa-8f30-005dc7d58e82.png)<br>
+*Relais Measurements*
