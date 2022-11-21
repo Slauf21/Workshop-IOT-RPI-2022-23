@@ -24,6 +24,7 @@ TO BE UPDATED
 | MAX 4466       | Microfoon                           | 1           |
 | TCS34725       | RGB sensor                          | 1           |
 | SSOP8          | SPI-ADC                             | 1           |
+| 2n2222a        | BJT transistor                      | 1           |
 
 ## Schematic 
 
