@@ -53,9 +53,27 @@ The design will appear on screen and the first this that needs to be done is to 
 ![image](https://user-images.githubusercontent.com/79916416/203009007-dee7c6fc-b8a5-4c7e-95c8-b6f7dbe375cb.png)<br>
 *New Footprint*
 
-<br>
 
 ### Schematic Icon
 
 A new component also needs a schematic icon to put on the schematic design. This is done by adding a schematic library to the project like a PCB library was added. 
 Name it the same as the PCB library and save it under the same directory (Libs). Select the icon item and press edit. Under the new tab call the icon **RPI-Header*. The custom footprint needs to be linked to this icon. This is done by pressing the add footprint button at the bottom.
+
+A window will appear to select a library. Press browse, then select the correct library called RPI-Header.
+
+![image](https://user-images.githubusercontent.com/79916416/203012484-e9745785-24ee-41a2-b47b-2d1a3ec10b99.png)<br>
+*Add Footprint*
+
+![image](https://user-images.githubusercontent.com/79916416/203012608-88bfb36e-c8a9-40d7-85ad-568a3ff39835.png)<br>
+*Select Library*
+
+Press OK, then OK again. The footprint is succesfully linked to the icon. Now an actually schematic icon needs to be created.
+
+To do this press **Tools** -> **Symbol Wizard** in the toolbar. A new window will apear asking the layout. RPI gpio has 40 pins in a zig zag style. Seelct zig zag in the layout style. Now all the pins are set as inputs. Select them all by first selecting the first, then holding shift and pressing the last one. Change the electrical type from Inputs to I/O by clicking the drop down menu of the last item.
+
+![image](https://user-images.githubusercontent.com/79916416/203013946-f334472f-2497-433b-b3b7-cb5844734830.png)<br>
+*Icon Design*
+
+Then **Place** -> **Place New Symbol**
+
+In the SCH LIB window select the icon and press place. Place it somewhere on the schematic. Double click it and give it the name J1
