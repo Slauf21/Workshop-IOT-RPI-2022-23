@@ -8,11 +8,14 @@ Here are the measurements of the pin headers:
 *Measurements in millimeters*
 
 ## Pin Header
-These pin headers are not basic components in Altium and need to be created with a footprint wizard. 
+These pin headers are not basic components in Altium and need to be created with a footprint wizard. Before starting create a libs folder in the Altium project.
+
+![image](https://user-images.githubusercontent.com/79916416/203011348-39ad64b4-d7a6-49b4-8055-d19d05f3969c.png) <br>
+*Libs Folder*
 
 ### PCB Footprint
 To add a custom component right click the project (.PrjPcb file) 
-then **Add New To Project** -> **PCB Library**. The new file will be openned and will be blank. On the left panel a footprint is visible. This one wont be used.
+then **Add New To Project** -> **PCB Library**. The new file will be openned and will be blank. On the left panel a footprint is visible. This one wont be used. Press **CTRL+S** and save the file in the **Libs** folder.
 
 ![image](https://user-images.githubusercontent.com/79916416/203002904-d9896105-0451-43e5-a2c0-8b8fc58ac5e1.png)<br>
 *Default Footprint*
@@ -55,4 +58,4 @@ The design will appear on screen and the first this that needs to be done is to 
 ### Schematic Icon
 
 A new component also needs a schematic icon to put on the schematic design. This is done by adding a schematic library to the project like a PCB library was added. 
-Name it the same as the PCB library and save it under the same directory. Select the icon item and press edit. Under the new tab call the icon **RPI-Header*. The custom footprint needs to be linked to this icon. This is done by pressing the add footprint button at the bottom.
+Name it the same as the PCB library and save it under the same directory (Libs). Select the icon item and press edit. Under the new tab call the icon **RPI-Header*. The custom footprint needs to be linked to this icon. This is done by pressing the add footprint button at the bottom.
