@@ -128,4 +128,8 @@ After adding all the components, the schematic should look like this:
 ![image](https://user-images.githubusercontent.com/79916416/203328614-09c6c77e-4332-42ab-bcac-9ae7aa9d02ba.png)<br>
 *Schematic Not-Wired*
 
-Now all the components need to be wired to the RPI header. For this, a [rpi gpio pinout](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png) picture is usefull.
+Now all the components need to be wired to the RPI header. For this, a [rpi gpio pinout](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png) picture is usefull. The right side of the gpio pins should be used as much as possible because the pcb is going to sit on the right side of the RPI.
+
+Pin 16 is a free GPIO pin that will be used to drive the transistor base. Connect it to the pin number 2 of transistor Q1. The collector of the transsitor needs to be connected to the 5V power supply of the RPi which is pins 2 or 4. This will then power the coil, which needs to be connected to the emitter of the transtor (pin 3). Wires can be placed using CTRL+W command. Looking at [the data sheet of the relais](https://www.mouser.be/datasheet/2/307/Omron_(ENG)G5PZ_E-1843616.pdf), the coil is between pins 1 and 4 and the contact is between 2 and 3. Connect the Emitter of the BJT to pin 1 of the rlais, then connect pin 4 to ground of the RPI.
+
+Then the screw terminals need to be connected through the contact of the relais. Pins 2 and 3 can be connected since they are neutral and earth, but pins one will be live and need to go to the contact of the coil.
