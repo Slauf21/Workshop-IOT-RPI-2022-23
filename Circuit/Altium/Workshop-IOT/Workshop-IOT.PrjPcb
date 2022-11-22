@@ -168,23 +168,6 @@ GenerateClassCluster=0
 DocumentUniqueId=RUKKTDHK
 
 [Document8]
-DocumentPath=3x1-Terminal.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=RTIYYFCJ
-
-[Document9]
 DocumentPath=Libs\3x1-Terminal.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -201,7 +184,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GUDWBBDH
 
-[Document10]
+[Document9]
 DocumentPath=Libs\Relais.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -218,7 +201,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BKWTPWIN
 
-[Document11]
+[Document10]
 DocumentPath=Libs\Relais.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -235,7 +218,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OREAAOMS
 
-[Document12]
+[Document11]
 DocumentPath=Libs\3x1.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -252,7 +235,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AVNHDHSX
 
-[Document13]
+[Document12]
 DocumentPath=3x1.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
