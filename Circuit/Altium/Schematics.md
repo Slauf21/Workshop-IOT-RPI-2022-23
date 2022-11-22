@@ -113,3 +113,19 @@ The distance is the distance that was written in mm in the datasheet converted t
 *Schematic Icon*
 
 The schematic icon pin numbering is the same as the pins on the datasheet of the relais.
+
+## Resistors
+
+Throught hole resistors are used. These are already included in the standard library of Altium. In the components search, select miscellanious devices from the drop down menu and search for Res1.
+
+![image](https://user-images.githubusercontent.com/79916416/203328175-2cfcdf56-2bdc-4358-8549-ca882f684c01.png)<br>
+*Miscellanious Devices*
+
+## Wiring the Schematic
+
+After adding all the components, the schematic should look like this:
+
+![image](https://user-images.githubusercontent.com/79916416/203328614-09c6c77e-4332-42ab-bcac-9ae7aa9d02ba.png)<br>
+*Schematic Not-Wired*
+
+Now all the components need to be wired to the RPI header. For this, a [rpi gpio pinout](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png) picture is usefull.
