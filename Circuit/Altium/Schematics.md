@@ -103,3 +103,51 @@ The relais has a much different pin design the a header or terminal.
 
 ![image](https://user-images.githubusercontent.com/79916416/203024929-793bfb97-0f3d-41aa-8f30-005dc7d58e82.png)<br>
 *Relais Measurements*
+
+![image](https://user-images.githubusercontent.com/79916416/203032334-16b1f4ef-4d3c-4462-a36e-10234f138adf.png)<br>
+*Footprint*
+
+The distance is the distance that was written in mm in the datasheet converted to mils.
+
+![image](https://user-images.githubusercontent.com/79916416/203032510-4f5602a5-f81a-467d-876f-e5073b929eda.png)<br>
+*Schematic Icon*
+
+The schematic icon pin numbering is the same as the pins on the datasheet of the relais.
+
+## Resistors
+
+Throught hole resistors are used. These are already included in the standard library of Altium. In the components search, select miscellanious devices from the drop down menu and search for Res1.
+
+![image](https://user-images.githubusercontent.com/79916416/203328175-2cfcdf56-2bdc-4358-8549-ca882f684c01.png)<br>
+*Miscellanious Devices*
+
+## Wiring the Schematic
+
+After adding all the components, the schematic should look like this:
+
+![image](https://user-images.githubusercontent.com/79916416/203328614-09c6c77e-4332-42ab-bcac-9ae7aa9d02ba.png)<br>
+*Schematic Not-Wired*
+
+Now all the components need to be wired to the RPI header. For this, a [rpi gpio pinout](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png) picture is usefull. The right side of the gpio pins should be used as much as possible because the pcb is going to sit on the right side of the RPI.
+
+Pin 16 is a free GPIO pin that will be used to drive the transistor base. Connect it to the pin number 2 of transistor Q1 with the 1.2k ohm resistor in between. The collector of the transsitor needs to be connected to the 5V power supply of the RPi which is pins 2 or 4. This will then power the coil, which needs to be connected to the emitter of the transtor (pin 3). Wires can be placed using CTRL+W command. Looking at [the data sheet of the relais](https://www.mouser.be/datasheet/2/307/Omron_(ENG)G5PZ_E-1843616.pdf), the coil is between pins 1 and 4 and the contact is between 2 and 3. Connect the Emitter of the BJT to pin 1 of the relais, then connect pin 4 to ground of the RPI.
+
+Then the screw terminals need to be connected through the contact of the relais. Pins 2 and 3 can be connected since they are neutral and earth, but pins one will be live and need to go to the contact of the coil. The fly back diode 1n4007G needs to be connected reverse and in parallel with the coil. This means the anode will be connected to pin 4 and the kathode to pin 1 of the relais. 
+
+The [DHT11](https://www.google.com/search?q=dht11+pinout+resistor&sxsrf=ALiCzsY3LPts4QoQ96bUZEVuVdWRRar4pg:1669126484691&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiPuNHZ_MH7AhUJi_0HHUXWBlgQ_AUoAXoECAEQAw&biw=1536&bih=754&dpr=1.25#imgrc=dNX5LVLrUIyOnM) has 3 connected pins. Vcc, Data and fround. It also needs a resistor between the data and the 5V. Pin 1 will be connected to the same 5V pin. Pin 2 will be connected to pin12 (GPIO 18). 3 is not connected and 4 is ground which is pin 6. Also connect the 10k resistor between dht pins 1 and 2.
+
+The mic uses and SPI ADC to convert the analog data to digital. Here are its pinouts:
+
+![image](https://user-images.githubusercontent.com/79916416/203338400-d0879bc2-c969-43c2-bf77-2496ff0f610c.png)<br>
+*LTC1864 Pinouts*
+
+Align the headers in the schematic to match the pinouts. This will create less confusion.
+
+![image](https://user-images.githubusercontent.com/79916416/203341361-08ffe19f-a1e7-46d8-8e87-2b90161a3799.png)<br>
+*Schematic Pinout LTC1864*
+
+This component is devided into tho headers, one 4x1 header for each side. Vcc (Pin8) and Vref (pin1) need to be connected with 5V. the [mic module](https://www.kiwi-electronics.com/nl/elektretmicrofoon-versterker-max4466-met-instelbare-gain-806?gclid=Cj0KCQiAg_KbBhDLARIsANx7wAyVEiV2qtTk3kJveDw2UdLkxHq0YvuAmU_Quhp4nqPzJXDXiXeHDjgaAvsREALw_wcB) also needs its 5V source on pin 3 of J8. Pin 4 and pin 3 of the adc and pin 2 of the mic are grounded. This is because a positive voltage is measured. Pin 2 of the adc will be connected to the mic output pin1 of J8.
+
+Pins 5 (CONV),6 (SDO) and 7 (SCK) are the SPI pins. The SDO and SCK need to be connected to the MISO and SCLK pins on the RPI respectivly. WHich are pins 21 and 23. The CONV pin can be a free GPIO pin like pin 40.
+
+The [PIR motion sensor](https://www.mouser.be/datasheet/2/737/pir_passive_infrared_proximity_motion_sensor-932858.pdf) has 3 simple connectors. Pin 1 is the vcc, Pin2 is the data and pin 3 is the GND. Pin 22 will be used for the data of the PIR motion sensor.
