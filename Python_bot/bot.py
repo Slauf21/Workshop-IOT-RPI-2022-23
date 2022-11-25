@@ -7,6 +7,9 @@ import RPi.GPIO as GPIO
 import time
 import asyncio
 from gpiozero import MotionSensor
+import board
+import busio
+import adafruit_sgp30
 
 API_KEY = '5574596927:AAE4WXBSZbe0N6eIdlxHIfKe32hQfjJEThE'
 chat_id = '5452220589'
@@ -29,6 +32,11 @@ GPIO.setup(gpio_relais, GPIO.OUT)
 
 # Bewegingssensor declareren
 pir = MotionSensor(24)
+
+i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
+
+# Create library object on our I2C port
+sgp30 = adafruit_sgp30.Adafruit_SGP30(i2c)
 
 # Commondo voor simpele reply
 @bot.message_handler(commands=['hallo'])
@@ -75,6 +83,15 @@ def hallo(message):
 @bot.message_handler(commands=['motion_uit'])
 def hallo(message):
     bot.reply_to(message, "Bewegingssensor wordt uitgezet")
+
+# Commondo voor luchtkwaliteit
+@bot.message_handler(commands=['luchtkwaliteit'])
+def hallo(message):
+    bot.reply_to(message, "Luchtkwaliteit aan het meten.. Resultaat beschikbaar na 15 seconden.")
+    t_end = time.time() + 15
+    while time.time() < t_end:
+        eCO2, TVOC = sgp30.iaq_measure()
+    bot.send_message(chat_id, text = "eCO2 = %d ppm \t TVOC = %d ppb" % (eCO2, TVOC))
 
 # Aansturen beweginssensor
 def motion_det():
