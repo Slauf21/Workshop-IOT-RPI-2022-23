@@ -157,4 +157,6 @@ The [gas sensor](https://learn.adafruit.com/adafruit-sgp30-gas-tvoc-eco2-mox-sen
 ## Result
 
 The schematic will look like this:
-![image](https://user-images.githubusercontent.com/79916416/204138640-2f155af0-9ac2-47d1-b95c-9a25858264a5.png)
+
+![image](https://user-images.githubusercontent.com/79916416/204138640-2f155af0-9ac2-47d1-b95c-9a25858264a5.png)<br>
+*Resulting Schematic*
