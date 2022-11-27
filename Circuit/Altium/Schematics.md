@@ -153,3 +153,8 @@ Pins 5 (CONV),6 (SDO) and 7 (SCK) are the SPI pins. The SDO and SCK need to be c
 The [PIR motion sensor](https://www.mouser.be/datasheet/2/737/pir_passive_infrared_proximity_motion_sensor-932858.pdf) has 3 simple connectors. Pin 1 is the vcc, Pin2 is the data and pin 3 is the GND. Pin 22 will be used for the data of the PIR motion sensor.
 
 The [gas sensor](https://learn.adafruit.com/adafruit-sgp30-gas-tvoc-eco2-mox-sensor/pinouts) has 5 pins but the 1V8 output pin wont be used. The Vin pin needs its 5V source and the ground pin needs to be connected t oground. Then the I2C SCL and SDA pins need to be connected to the SCL and SDA pins of the RPI. These are pins 28 and 27.
+
+## Result
+
+The schematic will look like this:
+![image](https://user-images.githubusercontent.com/79916416/204138640-2f155af0-9ac2-47d1-b95c-9a25858264a5.png)
