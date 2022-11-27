@@ -160,3 +160,5 @@ The schematic will look like this:
 
 ![image](https://user-images.githubusercontent.com/79916416/204138640-2f155af0-9ac2-47d1-b95c-9a25858264a5.png)<br>
 *Resulting Schematic*
+
+Then the next step is to design the PCB. This can be read [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/main/Circuit/Altium/PCB.md).
