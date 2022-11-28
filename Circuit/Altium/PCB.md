@@ -22,3 +22,6 @@ These are made by first placing a pad:
 *Place Pad*
 
 And then under properties changing its hole size to the needed diameter, 2.75mm.
+
+![image](https://user-images.githubusercontent.com/79916416/204249687-a9066ca6-6bd8-4124-aadd-d5e6b8f74acb.png)<br>
+*PCB with screw holes*
