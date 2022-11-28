@@ -104,7 +104,7 @@ The relais has a much different pin design the a header or terminal.
 ![image](https://user-images.githubusercontent.com/79916416/203024929-793bfb97-0f3d-41aa-8f30-005dc7d58e82.png)<br>
 *Relais Measurements*
 
-![image](https://user-images.githubusercontent.com/79916416/203032334-16b1f4ef-4d3c-4462-a36e-10234f138adf.png)<br>
+![image](https://user-images.githubusercontent.com/79916416/204232282-617cd91c-9d5e-4081-aa7a-9bcf55d1ad8f.png)<br>
 *Footprint*
 
 The distance is the distance that was written in mm in the datasheet converted to mils.
