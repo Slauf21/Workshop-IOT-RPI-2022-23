@@ -158,7 +158,7 @@ The [gas sensor](https://learn.adafruit.com/adafruit-sgp30-gas-tvoc-eco2-mox-sen
 
 The schematic will look like this:
 
-![image](https://user-images.githubusercontent.com/79916416/204138640-2f155af0-9ac2-47d1-b95c-9a25858264a5.png)<br>
+![image](https://user-images.githubusercontent.com/79916416/204230306-3accb1fc-8c68-4c18-8d1c-3f2381f4258d.png)<br>
 *Resulting Schematic*
 
 Then the next step is to design the PCB. This can be read [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/main/Circuit/Altium/PCB.md).
