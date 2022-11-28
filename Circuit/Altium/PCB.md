@@ -14,7 +14,7 @@ With the schematic imported, the components need to be placed on the circuit boa
 
 The size of the board can be changed by clicking on board planning mode under the view tab. Then edit board shape under the design tab.
 
-There will also be holes in the PCB that align with the ones on the RPi. This way the PCB can sit on the RPi using standoffs and it wont bend under its own weight. [Here](https://raspiworld.com/images/other/drawings/Raspberry-Pi-1-2-3-Model-B.jpg) is an image with the measurements of the rpi.
+There will also be holes in the PCB that align with the ones on the RPi. This way the PCB can sit on the RPi using standoffs and it wont bend under its own weight. [Here](https://static.raspberrypi.org/files/product-briefs/Raspberry-Pi-Model-Bplus-Product-Brief.pdf) is an image with the measurements of the rpi.
 
 These are made by first placing a pad:
 
