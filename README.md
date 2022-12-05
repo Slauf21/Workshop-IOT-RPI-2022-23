@@ -59,7 +59,7 @@ Open de terminal op de Raspberry PI door op het terminal icoontje te klikken of 
 Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren.
 
 - Downloaden script
-  - wget https://raw.github.com/PXLDigital/EAI-Workshop-IoT-met-RPi/main/Code/install.sh
+  - wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/d751ddeb24a901cbfb92339efcc60615b5a4963a/Files/install.sh
 - Script uivoerbaar maken
   - chmod +x install.sh
 - Starten van script
@@ -78,6 +78,7 @@ We beginnen met het installeren van Telegram. Deze kan zowel op PC als op mobiel
 [![btfthr.png](https://i.postimg.cc/LXqyfSd9/btfthr.png)](https://postimg.cc/XGbcST7m)
 
 Onderstaande venster bij invoer BotFather:
+
 [![botfather.png](https://i.postimg.cc/vZQbvg2P/botfather.png)](https://postimg.cc/ZCDGbRS3)
 
 - Klik vervolgens op start.
@@ -86,8 +87,26 @@ Hierna verschijnt een hoop uileg van verschillende commando's voor het aansturen
 
 - Om nu een bot te creëren voeren we '/newbot' in.
 
+[![nwbot.png](https://i.postimg.cc/xjB8VV9K/nwbot.png)](https://postimg.cc/t7tpFfZT)
+
 *Elk <ins> commando </ins> begint met een slash (/).*
+
+- Kies een naam voor je bot.
+
+[![name.png](https://i.postimg.cc/2jnQtGD8/name.png)](https://postimg.cc/0r2KMpjL)
+
+- Kies nu een gebruikersnaam voor je bot dat eindingt met bot (bv. test_bot). 
+
+[![username.png](https://i.postimg.cc/htZZGshR/username.png)](https://postimg.cc/jDN4gzzM)
+
+*Gebruik iets anders als 'Telegram_bot'.*
+
+Indien naam in gebruik kan er nogmaals gevraagd worden om een gebruikersnaam in te voeren.
+
+- Als dit succesvol is gelukt, wordt er een unieke token aangemaakt die later gebruikt wordt in de software.
+
+[![token.png](https://i.postimg.cc/PfBK80ry/token.png)](https://postimg.cc/QVJc247K)
 
 # 3. Schrijven van de code
 
-Nu alles ingesteld is kan begonnen worden met het schrijven van de code. Om dit te doen gebruiken we een laptop met daarop een code editor. We gebruiken de [notepad++ editor](https://notepad-plus-plus.org/). We moeten ook de geschreven code op de Raspberry Pi krijgen
+Nu alles ingesteld is kan begonnen worden met het schrijven van de code. Om dit te doen gebruiken we een laptop met daarop een code editor. We gebruiken de [notepad++ editor](https://notepad-plus-plus.org/). We moeten ook de geschreven code op de Raspberry Pi krijgen.
