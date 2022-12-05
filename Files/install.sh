@@ -3,13 +3,13 @@ apt-get update -y
 apt install python3-pip -y 
 apt install python3-cffi -y 
 apt install -y gpac
-pip3 install discord.py[voice]
-python3 -m pip install -U discord.py[voice]
+pip3 install telebot
+pip3 install Adafruit_DHT
+sudo apt-get -y install python3-rpi.gpio
+from gpiozero import MotionSensor
+pip3 install board
+pip3 install adafruit-circuitpython-sgp30
 apt-get install build-essential python-dev -y
-git clone https://github.com/adafruit/Adafruit_Python_DHT.git
-cd Adafruit_Python_DHT
-python setup.py install
-python3 setup.py install
 #apt-get autoremove -y
 #apt-get autoclean -y
 systemctl enable ssh
