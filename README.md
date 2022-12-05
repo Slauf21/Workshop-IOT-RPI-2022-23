@@ -35,7 +35,11 @@ Nu is de Raspberry Pi klaargezet en moet hij geconfigureerd worden.
 
 ## 1.2. Raspberry Pi verbinden met WiFi
 
-Start de Raspberry PI Zero op en klik recht boven op het wifi-icoontje (1), controleer vervolgens of de wifi ingeschakeld is (2) en selecteer daarna het gewenste netwerk (3). Er zal nu een melding komen om een wachtwoord in te geven (4). Kies na het ingeven van het wachtwoord ten slotte voor OK (5).
+Start de Raspberry PI op en klik recht boven op het wifi-icoontje (1), controleer vervolgens of de wifi ingeschakeld is (2) en selecteer daarna het gewenste netwerk (3). Er zal nu een melding komen om een wachtwoord in te geven (4). Kies na het ingeven van het wachtwoord ten slotte voor OK (5).
+
+Startscherm
+
+[![rpi-home.png](https://i.postimg.cc/rsWysJ6F/rpi-home.png)](https://postimg.cc/xNfVFLTW)
 
 ![image](https://user-images.githubusercontent.com/79916416/201632572-0cdbd516-498e-4d88-9431-06fde4849533.png)
 
@@ -44,8 +48,22 @@ De Raspberry is nu verbonden met het wifi netwerkt en er werd door de router een
 ![image](https://user-images.githubusercontent.com/79916416/201632807-cfd7bbc9-b4fc-4ae6-9ba2-312468fa495d.png)
 
 ## 1.3. Configureren Raspberry Pi
+Als volgende stap gaan we met een voorgeschreven .sh file de nodige bibliotheken afhalen en functionaliteiten aanzetten van de RPI.
 
-!!!HIER KOMT RPI INSTELLEN MET SCRIPT, SCRIPT MOET NOG AANGEPAST WORDEN!!!
+Open de terminal op de Raspberry PI door op het terminal icoontje te klikken of door gebruik te maken van de sneltots ctrl+alt+t
+
+[![trml-logo.png](https://i.postimg.cc/JhDjxfZT/trml-logo.png)](https://postimg.cc/KKbKvs9L)
+
+Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren.
+
+- Downloaden script
+  - wget https://raw.github.com/PXLDigital/EAI-Workshop-IoT-met-RPi/main/Code/install.sh
+- Script uivoerbaar maken
+  - chmod +x install.sh
+- Starten van script
+  - sudo ./install.sh
+
+Vervolgens zal de RPI herstarten en kan er verder gegaan worden met de volgende stap.
 
 # 2. Aanmaken van Telegram Bot
 
