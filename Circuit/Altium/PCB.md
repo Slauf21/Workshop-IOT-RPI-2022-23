@@ -19,3 +19,8 @@ Round edges will make the PCB cleaner. The RPI has 3.0mm radius on its edges. Th
 *Round Edges*
 
 Now to actually define the boardshape hold shift and click on all the edge pieces to select them all. Then go to Design tab on the toolbar -> "Board Shape" -> "Redefine Boardshape From Selected Objects".
+
+The edge pieces can now be deleted.
+
+![image](https://user-images.githubusercontent.com/79916416/205618480-ff649944-9186-43a7-8e81-eb0ed2d022f5.png)<br>
+*Final Board Shape*
