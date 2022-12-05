@@ -7,6 +7,8 @@ Here are the measurements of the pin headers:
 ![image](https://user-images.githubusercontent.com/79916416/202998758-d3084e8b-d7c6-4c54-bdb8-5ecac14820c2.png)
 *Measurements in millimeters*
 
+[Library Loader](https://www.samacsys.com/altium-designer-library-instructions/) is a software that allows you to import libraries for components. These include pre made footprints and schematic icons. This will be used for the SGP40 sensor
+
 ## Pin Header
 These pin headers are not basic components in Altium and need to be created with a footprint wizard. Before starting create a libs folder in the Altium project.
 
