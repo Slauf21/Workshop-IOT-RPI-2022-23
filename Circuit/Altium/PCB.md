@@ -29,3 +29,8 @@ Now its a matter of placing all the components in the most efficient way. The RP
 
 ![image](https://user-images.githubusercontent.com/79916416/205624575-04836ca0-0093-44b9-9d64-f7265280ecff.png)<br>
 *Components Placed*
+
+The top and bottom layers are used to wire the components:
+
+![image](https://user-images.githubusercontent.com/79916416/205656644-3138850d-f094-4b04-95bd-f2e9b7fd4321.png)<br>
+*Wired PCB*
