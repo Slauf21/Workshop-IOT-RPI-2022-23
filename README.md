@@ -59,7 +59,7 @@ Open de terminal op de Raspberry PI door op het terminal icoontje te klikken of 
 Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren.
 
 - Downloaden script
-  - wget https://raw.github.com/PXLDigital/EAI-Workshop-IoT-met-RPi/main/Code/install.sh
+  - wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/d751ddeb24a901cbfb92339efcc60615b5a4963a/Files/install.sh
 - Script uivoerbaar maken
   - chmod +x install.sh
 - Starten van script
@@ -78,6 +78,7 @@ We beginnen met het installeren van Telegram. Deze kan zowel op PC als op mobiel
 [![btfthr.png](https://i.postimg.cc/LXqyfSd9/btfthr.png)](https://postimg.cc/XGbcST7m)
 
 Onderstaande venster bij invoer BotFather:
+
 [![botfather.png](https://i.postimg.cc/vZQbvg2P/botfather.png)](https://postimg.cc/ZCDGbRS3)
 
 - Klik vervolgens op start.
