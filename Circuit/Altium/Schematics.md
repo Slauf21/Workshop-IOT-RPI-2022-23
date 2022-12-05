@@ -116,9 +116,9 @@ The distance is the distance that was written in mm in the datasheet converted t
 
 The schematic icon pin numbering is the same as the pins on the datasheet of the relais.
 
-## Resistors
+## Resistors and Capacitors
 
-Throught hole resistors are used. These are already included in the standard library of Altium. In the components search, select miscellanious devices from the drop down menu and search for Res1.
+Throught hole resistors are used. These are already included in the standard library of Altium. In the components search, select miscellanious devices from the drop down menu and search for Res1. The same method is used for importing capactitors.
 
 ![image](https://user-images.githubusercontent.com/79916416/203328175-2cfcdf56-2bdc-4358-8549-ca882f684c01.png)<br>
 *Miscellanious Devices*
@@ -127,7 +127,7 @@ Throught hole resistors are used. These are already included in the standard lib
 
 After adding all the components, the schematic should look like this:
 
-![image](https://user-images.githubusercontent.com/79916416/203328614-09c6c77e-4332-42ab-bcac-9ae7aa9d02ba.png)<br>
+![image](https://user-images.githubusercontent.com/79916416/205596907-9b91dbb2-e162-416f-884a-932de654a84c.png)<br>
 *Schematic Not-Wired*
 
 Now all the components need to be wired to the RPI header. For this, a [rpi gpio pinout](https://www.raspberrypi.com/documentation/computers/images/GPIO-Pinout-Diagram-2.png) picture is usefull. The right side of the gpio pins should be used as much as possible because the pcb is going to sit on the right side of the RPI.
@@ -148,13 +148,13 @@ Align the headers in the schematic to match the pinouts. This will create less c
 ![image](https://user-images.githubusercontent.com/79916416/203341361-08ffe19f-a1e7-46d8-8e87-2b90161a3799.png)<br>
 *Schematic Pinout LTC1864*
 
-This component is devided into tho headers, one 4x1 header for each side. Vcc (Pin8) and Vref (pin1) need to be connected with 5V. the [mic module](https://www.kiwi-electronics.com/nl/elektretmicrofoon-versterker-max4466-met-instelbare-gain-806?gclid=Cj0KCQiAg_KbBhDLARIsANx7wAyVEiV2qtTk3kJveDw2UdLkxHq0YvuAmU_Quhp4nqPzJXDXiXeHDjgaAvsREALw_wcB) also needs its 5V source on pin 3 of J8. Pin 4 and pin 3 of the adc and pin 2 of the mic are grounded. This is because a positive voltage is measured. Pin 2 of the adc will be connected to the mic output pin1 of J8.
+This component is devided into tho headers, one 4x1 header for each side. Vcc (Pin8) and Vref (pin1) need to be connected with 5V. [Here](https://www.cuidevices.com/product/resource/cma-4544pf-w.pdf) is the mic basic operation circuit. The output will go to the SPI adc converter.
 
 Pins 5 (CONV),6 (SDO) and 7 (SCK) are the SPI pins. The SDO and SCK need to be connected to the MISO and SCLK pins on the RPI respectivly. WHich are pins 21 and 23. The CONV pin can be a free GPIO pin like pin 40.
 
 The [PIR motion sensor](https://www.mouser.be/datasheet/2/737/pir_passive_infrared_proximity_motion_sensor-932858.pdf) has 3 simple connectors. Pin 1 is the vcc, Pin2 is the data and pin 3 is the GND. Pin 22 will be used for the data of the PIR motion sensor.
 
-The [gas sensor](https://learn.adafruit.com/adafruit-sgp30-gas-tvoc-eco2-mox-sensor/pinouts) has 5 pins but the 1V8 output pin wont be used. The Vin pin needs its 5V source and the ground pin needs to be connected t oground. Then the I2C SCL and SDA pins need to be connected to the SCL and SDA pins of the RPI. These are pins 28 and 27.
+The [gas sensor](https://www.mouser.be/datasheet/2/682/Sensirion_Gas_Sensors_Datasheet_SGP40-2001008.pdf) also has a reading circuit. This will be recreated in altium.
 
 ## Result
 
