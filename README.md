@@ -87,11 +87,21 @@ Hierna verschijnt een hoop uileg van verschillende commando's voor het aansturen
 
 - Om nu een bot te creëren voeren we '/newbot' in.
 
+[![nwbot.png](https://i.postimg.cc/xjB8VV9K/nwbot.png)](https://postimg.cc/t7tpFfZT)
+
 *Elk <ins> commando </ins> begint met een slash (/).*
 
 - Kies een naam voor je bot.
 
-- Kies nu een gebruikersnaam voor je bot dat eindingt met bot (bv. test_bot). Indien naam in gebruik kan er nogmaals gevraagd worden om een gebruikersnaam in te voeren.
+[![name.png](https://i.postimg.cc/2jnQtGD8/name.png)](https://postimg.cc/0r2KMpjL)
+
+- Kies nu een gebruikersnaam voor je bot dat eindingt met bot (bv. test_bot). 
+
+[![username.png](https://i.postimg.cc/htZZGshR/username.png)](https://postimg.cc/jDN4gzzM)
+
+*Gebruik iets anders als 'Telegram_bot'.*
+
+Indien naam in gebruik kan er nogmaals gevraagd worden om een gebruikersnaam in te voeren.
 
 - Als dit succesvol is gelukt, wordt er een unieke token aangemaakt die later gebruikt wordt in de software.
 
@@ -99,4 +109,4 @@ Hierna verschijnt een hoop uileg van verschillende commando's voor het aansturen
 
 # 3. Schrijven van de code
 
-Nu alles ingesteld is kan begonnen worden met het schrijven van de code. Om dit te doen gebruiken we een laptop met daarop een code editor. We gebruiken de [notepad++ editor](https://notepad-plus-plus.org/). We moeten ook de geschreven code op de Raspberry Pi krijgen
+Nu alles ingesteld is kan begonnen worden met het schrijven van de code. Om dit te doen gebruiken we een laptop met daarop een code editor. We gebruiken de [notepad++ editor](https://notepad-plus-plus.org/). We moeten ook de geschreven code op de Raspberry Pi krijgen.
