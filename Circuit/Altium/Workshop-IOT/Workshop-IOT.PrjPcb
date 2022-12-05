@@ -303,6 +303,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BPQQTJEP
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Workshop-IOT\Design Rule Check - RPI-SENSORS.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
