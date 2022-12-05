@@ -138,7 +138,7 @@ Pin 16 is a free GPIO pin that will be used to drive the transistor base. Connec
 
 Then the screw terminals need to be connected through the contact of the relais. Pins 2 and 3 can be connected since they are neutral and earth, but pins one will be live and need to go to the contact of the coil. The fly back diode 1n4007G needs to be connected reverse and in parallel with the coil. This means the anode will be connected to pin 4 and the kathode to pin 1 of the relais. 
 
-The [DHT11](https://www.google.com/search?q=dht11+pinout+resistor&sxsrf=ALiCzsY3LPts4QoQ96bUZEVuVdWRRar4pg:1669126484691&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiPuNHZ_MH7AhUJi_0HHUXWBlgQ_AUoAXoECAEQAw&biw=1536&bih=754&dpr=1.25#imgrc=dNX5LVLrUIyOnM) has 3 connected pins. Vcc, Data and fround. It also needs a resistor between the data and the 5V. Pin 1 will be connected to the same 5V pin. Pin 2 will be connected to pin12 (GPIO 18). 3 is not connected and 4 is ground which is pin 6. Also connect the 10k resistor between dht pins 1 and 2.
+The [DHT11](https://www.google.com/search?q=dht11+pinout+resistor&sxsrf=ALiCzsY3LPts4QoQ96bUZEVuVdWRRar4pg:1669126484691&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiPuNHZ_MH7AhUJi_0HHUXWBlgQ_AUoAXoECAEQAw&biw=1536&bih=754&dpr=1.25#imgrc=dNX5LVLrUIyOnM) has 3 connected pins. Vcc, Data and fround. It also needs a resistor between the data and the 5V. Pin 1 will be connected to the same 5V pin. Pin 2 will be connected to pin7 which is the gpio pin that support 1 wire protocol. 3 is not connected and 4 is ground which is pin 6. Also connect the 10k resistor between dht pins 1 and 2.
 
 The mic uses and SPI ADC to convert the analog data to digital. Here are its pinouts:
 
