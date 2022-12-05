@@ -1,5 +1,7 @@
 # Schematic
 
+[RPI pins header detailed](https://user-images.githubusercontent.com/79916416/205603582-8edb5c64-c594-4c13-aa63-774d3fb8d8f8.png)
+
 The PCB will be designed in Altium designer. In Altium create a new project and add a schematic to the project. The components will be put on this schematic. 
 A lot of the sensors we read are external, meaning they are their own circuit boards and need to be connected with headers. The PCB will sit on the RPI headers. 
 Here are the measurements of the pin headers:
@@ -136,7 +138,7 @@ Pin 16 is a free GPIO pin that will be used to drive the transistor base. Connec
 
 Then the screw terminals need to be connected through the contact of the relais. Pins 2 and 3 can be connected since they are neutral and earth, but pins one will be live and need to go to the contact of the coil. The fly back diode 1n4007G needs to be connected reverse and in parallel with the coil. This means the anode will be connected to pin 4 and the kathode to pin 1 of the relais. 
 
-The [DHT11](https://www.google.com/search?q=dht11+pinout+resistor&sxsrf=ALiCzsY3LPts4QoQ96bUZEVuVdWRRar4pg:1669126484691&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiPuNHZ_MH7AhUJi_0HHUXWBlgQ_AUoAXoECAEQAw&biw=1536&bih=754&dpr=1.25#imgrc=dNX5LVLrUIyOnM) has 3 connected pins. Vcc, Data and fround. It also needs a resistor between the data and the 5V. Pin 1 will be connected to the same 5V pin. Pin 2 will be connected to pin12 (GPIO 18). 3 is not connected and 4 is ground which is pin 6. Also connect the 10k resistor between dht pins 1 and 2.
+The [DHT11](https://www.google.com/search?q=dht11+pinout+resistor&sxsrf=ALiCzsY3LPts4QoQ96bUZEVuVdWRRar4pg:1669126484691&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiPuNHZ_MH7AhUJi_0HHUXWBlgQ_AUoAXoECAEQAw&biw=1536&bih=754&dpr=1.25#imgrc=dNX5LVLrUIyOnM) has 3 connected pins. Vcc, Data and fround. It also needs a resistor between the data and the 5V. Pin 1 will be connected to the same 5V pin. Pin 2 will be connected to pin7 which is the gpio pin that support 1 wire protocol. 3 is not connected and 4 is ground which is pin 6. Also connect the 10k resistor between dht pins 1 and 2.
 
 The mic uses and SPI ADC to convert the analog data to digital. Here are its pinouts:
 
@@ -150,7 +152,7 @@ Align the headers in the schematic to match the pinouts. This will create less c
 
 This component is devided into tho headers, one 4x1 header for each side. Vcc (Pin8) and Vref (pin1) need to be connected with 5V. [Here](https://www.cuidevices.com/product/resource/cma-4544pf-w.pdf) is the mic basic operation circuit. The output will go to the SPI adc converter.
 
-Pins 5 (CONV),6 (SDO) and 7 (SCK) are the SPI pins. The SDO and SCK need to be connected to the MISO and SCLK pins on the RPI respectivly. WHich are pins 21 and 23. The CONV pin can be a free GPIO pin like pin 40.
+Pins 5 (CONV),6 (SDO) and 7 (SCK) are the SPI pins. The SDO and SCK need to be connected to the MISO and SCLK pins on the RPI respectivly. WHich are pins 21 and 23. The CONV pin is the slave select and needs to be connected to SPI0 CE1 pin.
 
 The [PIR motion sensor](https://www.mouser.be/datasheet/2/737/pir_passive_infrared_proximity_motion_sensor-932858.pdf) has 3 simple connectors. Pin 1 is the vcc, Pin2 is the data and pin 3 is the GND. Pin 22 will be used for the data of the PIR motion sensor.
 
