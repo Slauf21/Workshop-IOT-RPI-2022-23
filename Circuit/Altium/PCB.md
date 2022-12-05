@@ -24,3 +24,5 @@ The edge pieces can now be deleted.
 
 ![image](https://user-images.githubusercontent.com/79916416/205618480-ff649944-9186-43a7-8e81-eb0ed2d022f5.png)<br>
 *Final Board Shape*
+
+Now its a matter of placing all the components in the most efficient way. The RPI header will go all the way on the right. A little space needs to be left because two tracks will come from the right side.
