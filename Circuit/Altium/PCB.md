@@ -1,27 +1,21 @@
 # PCB 
 
-First a PCB file needs to be added to the project. Rightclick tje PrjPcb file, then add new to project followed by PCB. Save ths file and name it. 
-Now the schematic needs to be imported into the PCB. This is done by opening the design tab on the toolbar and pressing import changes from "projectName". Validate changes
-and solve errors that might occure. Then execute changes.
+Add a PCB document to the project like you added a schematic. The first step will be to define the boards shape. It will go over the RPI and allign with the screwholes on the RPI. These measurements of the rpi can be found its [datasheet](https://static.raspberrypi.org/files/product-briefs/Raspberry-Pi-Model-Bplus-Product-Brief.pdf).
 
-![image](https://user-images.githubusercontent.com/79916416/204139344-a47263ed-14de-4cc3-b0bd-f50559d54af4.png)<br>
-*Imported Schematic*
+The PCB will come on the RPI like this:
 
-With the schematic imported, the components need to be placed on the circuit board in an effecient way. Then they need to be connected.
+![Screenshot 2022-12-05 111956](https://user-images.githubusercontent.com/79916416/205613234-8d5d4146-bf41-4407-98a1-fa89ffdc8a95.png)
 
-![image](https://user-images.githubusercontent.com/79916416/204234691-3a5d6aff-c24e-4c19-b7d9-e5e2a55bf880.png)<br>
-*Components Placed*
+Define the PCB Shape by first adding the holes. These are regular holes with diameter that alligns to the screwholes. The distances need to be placed correct too like in the measurements. The command jump to location can be used for precise movements. This is done by clicking J on the keyboard and then new location. 
 
-The size of the board can be changed by clicking on board planning mode under the view tab. Then edit board shape under the design tab.
+For the shape itself switch to the mechanical layer and then use the same jump to location position to trace wires across the board:
 
-There will also be holes in the PCB that align with the ones on the RPi. This way the PCB can sit on the RPi using standoffs and it wont bend under its own weight. [Here](https://static.raspberrypi.org/files/product-briefs/Raspberry-Pi-Model-Bplus-Product-Brief.pdf) is an image with the measurements of the rpi.
+![image](https://user-images.githubusercontent.com/79916416/205616071-e8a8f38a-a271-4a02-ab5e-ddcfd71ba498.png)<br>
+*Wires Board Shape*
 
-These are made by first placing a pad:
+Round edges will make the PCB cleaner. The RPI has 3.0mm radius on its edges. This will be copied on the PCB. The radius is 3mm, meaning that from the edges the lines need to be reduced by 3mm.
 
-![image](https://user-images.githubusercontent.com/79916416/204238642-f936fa26-1da1-41f7-b17d-7aae80a33330.png)<br>
-*Place Pad*
+![image](https://user-images.githubusercontent.com/79916416/205617767-6ebe359e-4ce4-4b04-9ab9-4906f45fbd49.png)<br>
+*Round Edges*
 
-And then under properties changing its hole size to the needed diameter, 2.75mm.
-
-![image](https://user-images.githubusercontent.com/79916416/204249687-a9066ca6-6bd8-4124-aadd-d5e6b8f74acb.png)<br>
-*PCB with screw holes*
+Now to actually define the boardshape hold shift and click on all the edge pieces to select them all. Then go to Design tab on the toolbar -> "Board Shape" -> "Redefine Boardshape From Selected Objects".
