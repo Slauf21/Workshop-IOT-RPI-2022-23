@@ -34,3 +34,15 @@ The top and bottom layers are used to wire the components:
 
 ![image](https://user-images.githubusercontent.com/79916416/205656644-3138850d-f094-4b04-95bd-f2e9b7fd4321.png)<br>
 *Wired PCB*
+
+A ground plane will be added using polygon pour. Right click on the PCB -> Place -> Polygon Pour. Then draw to the edges and skip the round corners for now.  Make sure to swap to the bottom layer first.
+
+![image](https://user-images.githubusercontent.com/79916416/205680507-6be7ba7b-6008-452d-bbd4-1da59354349a.png)<br>
+*Polygon without corners*
+
+Now the corners can be dragged to become round by pressing space while holding the corners.
+
+![image](https://user-images.githubusercontent.com/79916416/205681657-62a07b1f-f4aa-46ba-946e-4e7bcbe23e8e.png)<br>
+*Correct Polygon Pour*
+
+And with that the PCB is finished.
