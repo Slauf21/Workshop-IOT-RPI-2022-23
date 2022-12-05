@@ -11,6 +11,8 @@ Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar 
   - [1.2. Raspberry Pi verbinden met WiFi](#12-raspberry-pi-verbinden-met-wifi)
   - [1.3. Configureren Raspberry Pi](#13-configureren-raspberry-pi)
 - [2. Aanmaken van Telegram Bot](#2-aanmaken-van-telegram-bot)
+  - [2.1 Installeer Telegram](#21-installeer-telegram)
+  - [2.2 Configureren van bot](#22-configureren-van-bot)
 - [3. Schrijven van de code](#3-schrijven-van-de-code)
 
 # 1. Installeren en Configureren Raspberry Pi
@@ -66,6 +68,25 @@ Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens ui
 Vervolgens zal de RPI herstarten en kan er verder gegaan worden met de volgende stap.
 
 # 2. Aanmaken van Telegram Bot
+
+## 2.1 Installeer Telegram
+We beginnen met het installeren van Telegram. Deze kan zowel op PC als op mobiel geïnstalleerd worden. Volg deze link om [Telegram Desktop](https://desktop.telegram.org/) te installeren op PC.
+
+## 2.2 Configureren van bot
+- Open telegram en zoek naar BotFather.
+
+[![btfthr.png](https://i.postimg.cc/LXqyfSd9/btfthr.png)](https://postimg.cc/XGbcST7m)
+
+Onderstaande venster bij invoer BotFather:
+[![botfather.png](https://i.postimg.cc/vZQbvg2P/botfather.png)](https://postimg.cc/ZCDGbRS3)
+
+- Klik vervolgens op start.
+
+Hierna verschijnt een hoop uileg van verschillende commando's voor het aansturen van de bot.
+
+- Om nu een bot te creëren voeren we '/newbot' in.
+
+*Elk <ins> commando </ins> begint met een slash (/).*
 
 # 3. Schrijven van de code
 
