@@ -42,7 +42,7 @@ A ground plane will be added using polygon pour. Right click on the PCB -> Place
 
 Now the corners can be dragged to become round by pressing space while holding the corners.
 
-![image](https://user-images.githubusercontent.com/79916416/205681657-62a07b1f-f4aa-46ba-946e-4e7bcbe23e8e.png)<br>
+![image](https://user-images.githubusercontent.com/79916416/205951787-a6023d25-e013-47b9-81b9-81092e81460c.png)<br>
 *Correct Polygon Pour*
 
 And with that the PCB is finished.
