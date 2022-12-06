@@ -162,7 +162,7 @@ The [gas sensor](https://www.mouser.be/datasheet/2/682/Sensirion_Gas_Sensors_Dat
 
 The schematic will look like this:
 
-![image](https://user-images.githubusercontent.com/79916416/204230306-3accb1fc-8c68-4c18-8d1c-3f2381f4258d.png)<br>
+![image](https://user-images.githubusercontent.com/79916416/205951482-fb0dd68d-81d3-464e-ba6c-2d5cc8ae6d98.png)<br>
 *Resulting Schematic*
 
 Then the next step is to design the PCB. This can be read [here](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/main/Circuit/Altium/PCB.md).
