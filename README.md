@@ -1,6 +1,6 @@
 # Workshop-IOT-RPI-2022-23
 
-Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar op – zijn via een ‘embedded systeem’ verbonden met het internet. Internet of Things (IoT) noemen we dat. Hoe werken die systemen en wat zijn de elementaire bouwstenen om een volwaardig IoT-device te maken? In deze workshop bouwen we een eerste IoT-device. We bouwen een koppeling tussen sociale media (Telegram) en een “thing” met behulp van een Raspberry Pi-computertje verbonden met een temepratuur en luchtvochtigheid sensor, een bewegingssensor, een camera, een lichtsensor en een versnellings sensor. Dit alles doen we op een laagdrempelige manier. Alles is beschikbaar zodat je thuis - met je eigen Raspberry Pi – het werk kan voortzetten, als je dat wil.
+Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar op – zijn via een ‘embedded systeem’ verbonden met het internet. Internet of Things (IoT) noemen we dat. Hoe werken die systemen en wat zijn de elementaire bouwstenen om een volwaardig IoT-device te maken? In deze workshop bouwen we een eerste IoT-device. We bouwen een koppeling tussen sociale media (Telegram) en een “thing” met behulp van een Raspberry Pi-computertje verbonden met een temperatuur en luchtvochtigheid sensor, een bewegingssensor, een camera, een lichtsensor en een versnellingssensor. Dit alles doen we op een laagdrempelige manier. Alles is beschikbaar zodat je thuis - met je eigen Raspberry Pi – het werk kan voortzetten, als je dat wil.
 
 # Inhoudstabel
 
@@ -14,6 +14,7 @@ Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar 
   - [2.1 Installeer Telegram](#21-installeer-telegram)
   - [2.2 Configureren van bot](#22-configureren-van-bot)
 - [3. Schrijven van de code](#3-schrijven-van-de-code)
+  - [3.1 Putty](#31-putty)
 
 # 1. Installeren en Configureren Raspberry Pi
 
@@ -21,9 +22,9 @@ Om de Raspberry PI te kunnen gebruiken voor het IOT-project moet eerst het Raspb
 
 ## 1.1. Installeren Raspberry Pi OS
 
-Om het project te kunnen bouwen moet het Raspberry PI operating system geïnstalleerd worden (op een SD-kaart van minstens 16GB die volledig geformateerd mag worden) samen met enkele installatie pakketten. Bij de PI die tijdens de workshop gebruikt wordt is dit reeds uitgevoerd. Om dit thuis ook te kunnen doen moet dit eerst nog op de SD-kaart geïnstalleerd worden. 
+Om het project te kunnen bouwen moet het Raspberry PI operating system geïnstalleerd worden (op een SD-kaart van minstens 16GB die volledig geformatteerd mag worden) samen met enkele installatie pakketten. Bij de PI die tijdens de workshop gebruikt wordt is dit reeds uitgevoerd. Om dit thuis ook te kunnen doen moet dit eerst nog op de SD-kaart geïnstalleerd worden. 
 
-Eerst moet de [Raspberry Pi Imager](https://www.raspberrypi.com/software/) geinstalleerd worden op je computer. De imager is een snelle en makkelijke manier om de Raspberry Pi OS te installeren op een SD kaart.
+Eerst moet de [Raspberry Pi Imager](https://www.raspberrypi.com/software/) geïnstalleerd worden op je computer. De imager is een snelle en makkelijke manier om de Raspberry Pi OS te installeren op een SD kaart.
 
 Steek de SD kaart in je computer en open de imager. Bij het openen van de imager word je begroet met het volgende scherm:
 
@@ -41,6 +42,8 @@ Start de Raspberry PI op en klik recht boven op het wifi-icoontje (1), controlee
 
 Startscherm
 
+// hier komt gedeelte met echte SSID en ifconfig terminal
+
 [![rpi-home.png](https://i.postimg.cc/rsWysJ6F/rpi-home.png)](https://postimg.cc/xNfVFLTW)
 
 ![image](https://user-images.githubusercontent.com/79916416/201632572-0cdbd516-498e-4d88-9431-06fde4849533.png)
@@ -52,7 +55,7 @@ De Raspberry is nu verbonden met het wifi netwerkt en er werd door de router een
 ## 1.3. Configureren Raspberry Pi
 Als volgende stap gaan we met een voorgeschreven .sh file de nodige bibliotheken afhalen en functionaliteiten aanzetten van de RPI.
 
-Open de terminal op de Raspberry PI door op het terminal icoontje te klikken of door gebruik te maken van de sneltots ctrl+alt+t
+Open de terminal op de Raspberry PI door op het terminal icoontje te klikken of door gebruik te maken van de sneltoets ctrl+alt+t
 
 [![trml-logo.png](https://i.postimg.cc/JhDjxfZT/trml-logo.png)](https://postimg.cc/KKbKvs9L)
 
@@ -60,7 +63,7 @@ Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens ui
 
 - Downloaden script
   - wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/d751ddeb24a901cbfb92339efcc60615b5a4963a/Files/install.sh
-- Script uivoerbaar maken
+- Script uitvoerbaar maken
   - chmod +x install.sh
 - Starten van script
   - sudo ./install.sh
@@ -79,23 +82,24 @@ We beginnen met het installeren van Telegram. Deze kan zowel op PC als op mobiel
 
 Onderstaande venster bij invoer BotFather:
 
+*Elk <ins>commando</ins> begint met een slash (/).*
+
 [![botfather.png](https://i.postimg.cc/vZQbvg2P/botfather.png)](https://postimg.cc/ZCDGbRS3)
 
 - Klik vervolgens op start.
 
-Hierna verschijnt een hoop uileg van verschillende commando's voor het aansturen van de bot.
+Hierna verschijnt een hoop uitleg van verschillende commando's voor het aansturen van de bot.
 
 - Om nu een bot te creëren voeren we '/newbot' in.
 
 [![nwbot.png](https://i.postimg.cc/xjB8VV9K/nwbot.png)](https://postimg.cc/t7tpFfZT)
 
-*Elk <ins> commando </ins> begint met een slash (/).*
 
 - Kies een naam voor je bot.
 
 [![name.png](https://i.postimg.cc/2jnQtGD8/name.png)](https://postimg.cc/0r2KMpjL)
 
-- Kies nu een gebruikersnaam voor je bot dat eindingt met bot (bv. test_bot). 
+- Kies nu een gebruikersnaam voor je bot dat eindigt met bot (bv. test_bot). 
 
 [![username.png](https://i.postimg.cc/htZZGshR/username.png)](https://postimg.cc/jDN4gzzM)
 
@@ -109,4 +113,31 @@ Indien naam in gebruik kan er nogmaals gevraagd worden om een gebruikersnaam in 
 
 # 3. Schrijven van de code
 
-Nu alles ingesteld is kan begonnen worden met het schrijven van de code. Om dit te doen gebruiken we een laptop met daarop een code editor. We gebruiken de [notepad++ editor](https://notepad-plus-plus.org/). We moeten ook de geschreven code op de Raspberry Pi krijgen.
+Nu de Raspberry Pi is geïnstalleerd kunnen we beginnen met het schrijven van een Python code. Om de code te schrijven hebben we als eerst een editor nodig. Om de code te transporteren op de Raspberry Pi hebben we vervolgens een FTP-client nodig. En als laatste een SSH-client om commando's uit te voeren op de Raspberry Pi.
+
+Onderstaande link om de nodige te downloaden: <ins>*Indien je van thuis volgt.*</ins>
+
+- Editor: [Notepad++](https://notepad-plus-plus.org/downloads/) (installeer de laatste versie)
+- FTP-client: [FileZilla](https://filezilla-project.org/download.php?type=client)
+- SSH-client: [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (MSI Windows Installer: 64-bit x86:)
+
+## 3.1 Putty
+
+- Open Putty en voer de IP adres in die je had teruggevonden in de terminal.
+- *Kijk na of 'Connection type' op SSH staat en 22 als poortnummer is gekozen.*
+- Klik onderaan op 'Open'.
+
+Er wordt nu een verbinding gemaakt met het bovenvermelde adres.
+
+[![Putty](https://www.ssh.com/hubfs/Imported_Blog_Media/PuTTY_Windows_configuration_and_connection_screen_with_profile_save_option-2.png)]
+
+Vervolgens zal je moeten inloggen op de Raspberry Pi. Gebruik de standaard inloggegevens als volgt:
+
+- login as: **pi**
+- password: **raspberry**
+
+Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
+
+[![putty.png](https://i.postimg.cc/qMgkYPn0/putty.png)](https://postimg.cc/HVDD8PBP)
+
+*Inloggegevens ter illustratie, niet overnemen.*
