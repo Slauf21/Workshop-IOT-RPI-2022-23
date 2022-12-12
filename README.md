@@ -187,4 +187,4 @@ Indien je succesvol bent ingelogd ziet je scherm als volgt uit:
 
 - Indien je de bestand succesvol hebt kunnen openen ziet je scherm als volgt uit:
 
-[![ntpd-code.png](https://i.postimg.cc/26cRLW9q/ntpd-code.png)](https://postimg.cc/FdLn2Y4m)
+[![ntpd-code.png](https://i.postimg.cc/yYZZYyWb/ntpd-code.png)](https://postimg.cc/Czw1cDGG)

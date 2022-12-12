@@ -1,13 +1,7 @@
 import time
 import spidev
-import RPi.GPIO as GPIO
 
 spi_ch = 0
-
-GPIO.setmode(GPIO.BCM)
-conv = 0
-GPIO.setup(conv, GPIO.OUT)
-GPIO.output(conv, GPIO.HIGH)
 
 # Enable SPI
 spi = spidev.SpiDev(0, spi_ch)
@@ -48,9 +42,9 @@ def read_adc(adc_ch, vref = 5):
 try:
     while True:
         adc_0 = read_adc(0)
-        print("Ch 0:", round(adc_0, 2), "V")
+        adc_1 = read_adc(1)
+        print("Ch 0:", round(adc_0, 2), "V", "Ch 1:", round(adc_1, 2), "V")
         time.sleep(0.5)
 
 finally:
     spi.close()
-    GPIO.cleanup()
