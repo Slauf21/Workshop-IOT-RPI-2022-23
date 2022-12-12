@@ -15,6 +15,8 @@ Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar 
   - [2.2 Configureren van bot](#22-configureren-van-bot)
 - [3. Schrijven van de code](#3-schrijven-van-de-code)
   - [3.1 Putty](#31-putty)
+  - [3.1 FileZilla](#31-filezilla)
+  - [3.1 Notepad++](#31-notepad)
 
 # 1. Installeren en Configureren Raspberry Pi
 
@@ -141,3 +143,36 @@ Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 [![putty.png](https://i.postimg.cc/qMgkYPn0/putty.png)](https://postimg.cc/HVDD8PBP)
 
 *Inloggegevens ter illustratie, niet overnemen.*
+
+Hierna kunnen we aan de slag met het downloaden van de start code. Deze wordt bewaard op de Raspberry Pi met de volgende commando:
+
+- wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/598545a5d030073e92eaf5aa22aaa2390c0efab0/Python_bot/bot.py -O ~/Desktop/Workshop.py
+*Bestand bewaard op bureaublad.*
+
+## 3.1 FileZilla
+
+- Open FileZilla en voer de gegevens in die je had teruggevonden in de terminal.
+  - Host: IP adres
+  - Gebruikersnaam: **pi**
+  - Wachtwoord: **raspberry**
+  - Poort: 22
+- Klik op 'Snelverbinden' om een verbinding te maken.
+
+[![filezilla.png](https://i.postimg.cc/FRxzC42m/filezilla.png)](https://postimg.cc/XGpnXTjD)
+
+Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
+
+[![filzil.jpg](https://i.postimg.cc/HsmRC7VT/filzil.jpg)](https://postimg.cc/8sytRcRY)
+
+*Links zie je de werkomgeving van je PC en rechts die van de Raspberry Pi. Nu kan er bestanden uitgewisseld worden tussen deze 2 apparaten.*
+
+- Ga nu in de map 'Desktop' die je rechts terugvindt.
+- Binnen Desktop vind je nu 'Workshop.py' die eerder was afgehaald met een link.
+
+[![ws.png](https://i.postimg.cc/VNy48xk2/ws.png)](https://postimg.cc/zyjTwPWk)
+
+- Sleep deze bestand nu naar je bureablad van je <ins>PC</ins>.
+
+[![pyfile.png](https://i.postimg.cc/tJVHs0FW/pyfile.png)](https://postimg.cc/JHmFF26z)
+
+## 3.1 Notepad++
