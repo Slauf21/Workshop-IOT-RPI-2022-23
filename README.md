@@ -40,25 +40,25 @@ Nu is de Raspberry Pi klaargezet en moet hij geconfigureerd worden.
 
 ## 1.2. Raspberry Pi verbinden met WiFi
 
-Start de Raspberry PI op en klik recht boven op het wifi-icoontje (1), controleer vervolgens of de wifi ingeschakeld is (2) en selecteer daarna het gewenste netwerk (3). Er zal nu een melding komen om een wachtwoord in te geven (4). Kies na het ingeven van het wachtwoord ten slotte voor OK (5).
+- Steek de Raspberry Pi in en wacht tot deze is ingeschakeld.
 
-Startscherm
-
-// hier komt gedeelte met echte SSID en ifconfig terminal
+Startscherm:
 
 [![rpi-home.png](https://i.postimg.cc/VkX8LyDr/rpi-home.png)](https://postimg.cc/5X9Gnrcb)
 
+- Klik rechtsboven op het WiFi-icoontje. Schakel de WiFi in en kies voor het netwerk 'wifi.pxl-ea-ict.be'.
+
 [![rpi-ssid.jpg](https://i.postimg.cc/CxbsvJxp/rpi-ssid.jpg)](https://postimg.cc/HrsMnwM6)
 
-[![rpi-ssid-pass.png](https://i.postimg.cc/GmJdcwm7/rpi-ssid-pass.png)](https://postimg.cc/k24kcH8K)
+- Na het selecteren van het netwerk komt er in het midden een venster tevoorschijn. Vul hier 'elektronica' als wachtwoord in.
 
 [![rpi-ssid-pass-1.png](https://i.postimg.cc/0QBbp6FH/rpi-ssid-pass-1.png)](https://postimg.cc/7GSH4Lxg)
 
-![image](https://user-images.githubusercontent.com/79916416/201632572-0cdbd516-498e-4d88-9431-06fde4849533.png)
+Nu de Raspberry Pi verbonden is met het netwerk bewaren we de toegewezen IP-adres. Door over het WiFi-icoontje te bewegen met de cursor zal er een venster verschijnen. Noteer deze IP-adres.
 
-De Raspberry is nu verbonden met het wifi netwerkt en er werd door de router een IP-adres toegewezen aan de Raspberry. Beweeg met de cursor over het wifi-icoontje (1), er zal nu een text vlak verschijnen met daarin het IP-adres (2). Noteer dit IP_adres ergens wat je zal het later nodig hebben om via de PC te verbinden met de Raspberry.
+[![rpi-ssid-pass.png](https://i.postimg.cc/GmJdcwm7/rpi-ssid-pass.png)](https://postimg.cc/k24kcH8K)
 
-![image](https://user-images.githubusercontent.com/79916416/201632807-cfd7bbc9-b4fc-4ae6-9ba2-312468fa495d.png)
+*IP-adres: 169.154.146.220, niet overnemen.*
 
 ## 1.3. Configureren Raspberry Pi
 Als volgende stap gaan we met een voorgeschreven .sh file de nodige bibliotheken afhalen en functionaliteiten aanzetten van de RPI.
@@ -177,7 +177,7 @@ Indien je succesvol bent ingelogd ziet je scherm als volgt uit:
 
 [![ws.png](https://i.postimg.cc/VNy48xk2/ws.png)](https://postimg.cc/zyjTwPWk)
 
-- Sleep deze bestand nu naar je bureablad van je <ins>PC</ins>.
+- Sleep deze bestand nu naar je bureaublad van je <ins>PC</ins>.
 
 [![pyfile.png](https://i.postimg.cc/tJVHs0FW/pyfile.png)](https://postimg.cc/JHmFF26z)
 
