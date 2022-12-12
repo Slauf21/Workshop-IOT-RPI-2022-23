@@ -46,7 +46,13 @@ Startscherm
 
 // hier komt gedeelte met echte SSID en ifconfig terminal
 
-[![rpi-home.png](https://i.postimg.cc/rsWysJ6F/rpi-home.png)](https://postimg.cc/xNfVFLTW)
+[![rpi-home.png](https://i.postimg.cc/VkX8LyDr/rpi-home.png)](https://postimg.cc/5X9Gnrcb)
+
+[![rpi-ssid.jpg](https://i.postimg.cc/CxbsvJxp/rpi-ssid.jpg)](https://postimg.cc/HrsMnwM6)
+
+[![rpi-ssid-pass.png](https://i.postimg.cc/GmJdcwm7/rpi-ssid-pass.png)](https://postimg.cc/k24kcH8K)
+
+[![rpi-ssid-pass-1.png](https://i.postimg.cc/0QBbp6FH/rpi-ssid-pass-1.png)](https://postimg.cc/7GSH4Lxg)
 
 ![image](https://user-images.githubusercontent.com/79916416/201632572-0cdbd516-498e-4d88-9431-06fde4849533.png)
 
