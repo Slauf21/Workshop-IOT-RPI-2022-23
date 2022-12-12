@@ -146,7 +146,7 @@ Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 
 Hierna kunnen we aan de slag met het downloaden van de start code. Deze wordt bewaard op de Raspberry Pi met de volgende commando:
 
-- wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/598545a5d030073e92eaf5aa22aaa2390c0efab0/Python_bot/bot.py -O ~/Desktop/Workshop.py
+- wget https://raw.githubusercontent.com/Slauf21/Workshop-IOT-RPI-2022-23/main/Python_bot/bot.py -O ~/Desktop/Workshop.py
 *Bestand bewaard op bureaublad.*
 
 ## 3.1 FileZilla
@@ -158,9 +158,9 @@ Hierna kunnen we aan de slag met het downloaden van de start code. Deze wordt be
   - Poort: 22
 - Klik op 'Snelverbinden' om een verbinding te maken.
 
-[![filezilla.png](https://i.postimg.cc/FRxzC42m/filezilla.png)](https://postimg.cc/XGpnXTjD)
+[![filezilla.png](https://i.postimg.cc/28hgB7Bp/filezilla.png)](https://postimg.cc/qzB1PnLQ)
 
-Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
+Indien je succesvol bent ingelogd ziet je scherm als volgt uit:
 
 [![filzil.jpg](https://i.postimg.cc/HsmRC7VT/filzil.jpg)](https://postimg.cc/8sytRcRY)
 
@@ -176,3 +176,15 @@ Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 [![pyfile.png](https://i.postimg.cc/tJVHs0FW/pyfile.png)](https://postimg.cc/JHmFF26z)
 
 ## 3.1 Notepad++
+
+- Open Notepad++ en klik linksboven op 'Bestand'.
+
+[![notepad.png](https://i.postimg.cc/D0KPVLfs/notepad.png)](https://postimg.cc/CBmqkZqL)
+
+- Klik op 'Openen' en kies voor 'Workshop.py' die op je persoonlijke bureaublad staat.
+
+[![ntpd.png](https://i.postimg.cc/3W56cdVb/ntpd.png)](https://postimg.cc/p5Cq9X2D)
+
+- Indien je de bestand succesvol hebt kunnen openen ziet je scherm als volgt uit:
+
+[![ntpd-code.png](https://i.postimg.cc/26cRLW9q/ntpd-code.png)](https://postimg.cc/FdLn2Y4m)
