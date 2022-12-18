@@ -220,9 +220,9 @@ Indien je de bestand succesvol hebt kunnen openen ziet je scherm als volgt uit:
 
 *Vink 'Deze actie altijd gebruiken' en klik op 'OK' als je een waarschuwing krijgt over 'Doelbestand bestaat al'.*
 
-Nu de bijgewerkte versie van de code op de Rapsberry Pi staat kunnen we deze runnen.
+Nu de bijgewerkte versie van de code op de Raspberry Pi staat kunnen we deze runnen.
 
-- Open Putty en tik 'cd Desktop/' in om in de bureaublad te zitten waar de code zic bevindt.
+- Open Putty en tik 'cd Desktop/' in om in het bureaublad te zitten waar de code zich bevindt.
 
 - Tik nu 'python3 Workshop.py' in om de code te runnen.
 
@@ -232,4 +232,4 @@ Indien je de bestand succesvol hebt kunnen runnen ziet je scherm als volgt uit:
 
 Nu heb je de basis bereikt, om nu de interessante delen toe te voegen in je code klik je op deze link.
 
-Verder zal je hardware aansturen gelijk PiCamera om foto's te nemen, temperatuur metingen ui te voeren enzovoort.
+Verder zal je hardware aansturen gelijk PiCamera om foto's te nemen, temperatuurmetingen ui te voeren enzovoort.
