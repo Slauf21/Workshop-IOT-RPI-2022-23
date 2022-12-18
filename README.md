@@ -167,6 +167,7 @@ Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 Hierna kunnen we aan de slag met het downloaden van de start code. Deze wordt bewaard op de Raspberry Pi met de volgende commando:
 
 - wget https://raw.githubusercontent.com/Slauf21/Workshop-IOT-RPI-2022-23/main/Python_bot/Workshop.py -O ~/Desktop/Workshop.py
+
 *Bestand bewaard op bureaublad.*
 
 ## 3.1 FileZilla
@@ -205,6 +206,30 @@ Indien je succesvol bent ingelogd ziet je scherm als volgt uit:
 
 [![ntpd.png](https://i.postimg.cc/3W56cdVb/ntpd.png)](https://postimg.cc/p5Cq9X2D)
 
-- Indien je de bestand succesvol hebt kunnen openen ziet je scherm als volgt uit:
+Indien je de bestand succesvol hebt kunnen openen ziet je scherm als volgt uit:
 
-[![ntpd-code.png](https://i.postimg.cc/yYZZYyWb/ntpd-code.png)](https://postimg.cc/Czw1cDGG)
+[![ntpd-code.png](https://i.postimg.cc/DyhpPjf4/ntpd-code.png)](https://postimg.cc/HjStptyT)
+
+- Plak vervolgens de token en chat id binnen de aanhalingstekens.
+
+- Om deze wijziging op te slaan druk op ctrl + S of via 'Bestand' linksboven 'Opslaan' klikken.
+
+- Open FileZilla en sleep deze bestand vanuit je persoonlijke bureaublad aan de rechterkant binnen het map 'Desktop'.
+
+[![filzil.png](https://i.postimg.cc/66VqPqKb/filzil.png)](https://postimg.cc/yWd7gVk0)
+
+*Vink 'Deze actie altijd gebruiken' en klik op 'OK' als je een waarschuwing krijgt over 'Doelbestand bestaat al'.*
+
+Nu de bijgewerkte versie van de code op de Rapsberry Pi staat kunnen we deze runnen.
+
+- Open Putty en tik 'cd Desktop/' in om in de bureaublad te zitten waar de code zic bevindt.
+
+- Tik nu 'python3 Workshop.py' in om de code te runnen.
+
+Indien je de bestand succesvol hebt kunnen runnen ziet je scherm als volgt uit:
+
+[![ptty-termnl.png](https://i.postimg.cc/GpsgLZht/ptty-termnl.png)](https://postimg.cc/t1pNDv6G)
+
+Nu heb je basis bereikt, om nu de interessante delen toe te voegen in je code klik je op deze link.
+
+Verder zal je hardware aansturen gelijk PiCamera om foto's te nemen, temperatuur metingen uitvoeren enzovoort.
