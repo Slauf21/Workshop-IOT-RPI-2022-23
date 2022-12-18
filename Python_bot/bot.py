@@ -33,17 +33,17 @@ GPIO.setup(gpio_relais, GPIO.OUT)
 # Bewegingssensor declareren
 pir = MotionSensor(24)
 
-i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
+"""i2c = busio.I2C(board.SCL, board.SDA, frequency=100000)
 
 # Create library object on our I2C port
-sgp30 = adafruit_sgp30.Adafruit_SGP30(i2c)
+sgp30 = adafruit_sgp30.Adafruit_SGP30(i2c)"""
 
-# Commondo voor simpele reply
+# Commando voor simpele reply
 @bot.message_handler(commands=['hallo'])
 def hallo(message):
     bot.reply_to(message, "Hi from TELEBOT!!!!!!")
 
-# Commondo voor foto
+# Commando voor foto
 @bot.message_handler(commands=['foto'])
 def hallo(message):
     bot.reply_to(message, "Foto is onderweg...")
@@ -52,7 +52,7 @@ def hallo(message):
     # Foto sturen via telegram
     bot.send_photo(chat_id, photo=open('/home/pem/Desktop/pem_python/image.jpg', 'rb'))
     
-# Commondo voor DHT
+# Commando voor DHT
 @bot.message_handler(commands=['temperatuur'])
 def hallo(message):
     bot.reply_to(message, "Temperatuur wordt gemeten...")
@@ -61,37 +61,37 @@ def hallo(message):
     # Meting sturen via telegram
     bot.reply_to(message, 'Temp={0:0.1f}°C  Humidity={1:0.1f}%'.format(temperature, humidity))
 
-# Commondo voor aanzetten relais
+# Commando voor aanzetten relais
 @bot.message_handler(commands=['relais_aan'])
 def hallo(message):
     bot.reply_to(message, "Relais wordt aangezet")
     GPIO.output(gpio_relais, GPIO.HIGH)
 
-# Commondo voor uitzetten relais
+# Commando voor uitzetten relais
 @bot.message_handler(commands=['relais_uit'])
 def hallo(message):
     bot.reply_to(message, "Relais wordt uitgezet")
     GPIO.output(gpio_relais, GPIO.LOW)
 
-# Commondo voor uitzetten relais
+# Commando voor uitzetten relais
 @bot.message_handler(commands=['motion_aan'])
 def hallo(message):
     motion_det()
     bot.reply_to(message, "Bewegingssensor wordt aagezet")
 
-# Commondo voor uitzetten relais
+# Commando voor uitzetten relais
 @bot.message_handler(commands=['motion_uit'])
 def hallo(message):
     bot.reply_to(message, "Bewegingssensor wordt uitgezet")
 
-# Commondo voor luchtkwaliteit
+"""# Commando voor luchtkwaliteit
 @bot.message_handler(commands=['luchtkwaliteit'])
 def hallo(message):
     bot.reply_to(message, "Luchtkwaliteit aan het meten.. Resultaat beschikbaar na 15 seconden.")
     t_end = time.time() + 15
     while time.time() < t_end:
         eCO2, TVOC = sgp30.iaq_measure()
-    bot.send_message(chat_id, text = "eCO2 = %d ppm \t TVOC = %d ppb" % (eCO2, TVOC))
+    bot.send_message(chat_id, text = "eCO2 = %d ppm \t TVOC = %d ppb" % (eCO2, TVOC))"""
 
 # Aansturen beweginssensor
 def motion_det():

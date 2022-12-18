@@ -20,7 +20,7 @@ bot = telebot.TeleBot(API_KEY)
 
 print("Bot opgestart met token {}.".format(API_KEY))
 
-# Commondo voor simpele reply
+# Commando voor simpele reply
 @bot.message_handler(commands=['hallo'])
 def hallo(message):
     bot.reply_to(message, "Hi from TELEBOT!!!!!!")
