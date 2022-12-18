@@ -12,9 +12,9 @@ import busio
 import adafruit_sgp30
 
 # Voer hier token in:
-API_KEY = ''
+API_KEY = '5574596927:AAE4WXBSZbe0N6eIdlxHIfKe32hQfjJEThE'
 # Voer hier chat id in:
-chat_id = ''
+chat_id = '5452220589'
 
 bot = telebot.TeleBot(API_KEY)
 
