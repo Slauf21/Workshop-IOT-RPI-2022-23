@@ -212,7 +212,7 @@ Indien je de bestand succesvol hebt kunnen openen ziet je scherm als volgt uit:
 
 - Plak vervolgens de token en chat id binnen de aanhalingstekens.
 
-- Om deze wijziging op te slaan druk op ctrl + S of via 'Bestand' linksboven 'Opslaan' klikken.
+- Om deze wijziging op te slaan druk op Ctrl + S of via 'Bestand' linksboven 'Opslaan' klikken.
 
 - Open FileZilla en sleep deze bestand vanuit je persoonlijke bureaublad aan de rechterkant binnen het map 'Desktop'.
 
@@ -230,6 +230,6 @@ Indien je de bestand succesvol hebt kunnen runnen ziet je scherm als volgt uit:
 
 [![ptty-termnl.png](https://i.postimg.cc/GpsgLZht/ptty-termnl.png)](https://postimg.cc/t1pNDv6G)
 
-Nu heb je de basis bereikt, om nu de interessante delen toe te voegen in je code klik je op deze link.
+Nu heb je de basis bereikt, om nu de interessante delen toe te voegen in je code klik je op deze [link](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/wiki).
 
 Verder zal je hardware aansturen gelijk PiCamera om foto's te nemen, temperatuurmetingen ui te voeren enzovoort.
