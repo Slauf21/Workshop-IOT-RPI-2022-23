@@ -121,6 +121,12 @@ Indien naam in gebruik kan er nogmaals gevraagd worden om een gebruikersnaam in 
 
 [![token.png](https://i.postimg.cc/PfBK80ry/token.png)](https://postimg.cc/QVJc247K)
 
+Nu de token is gegenereerd hebben we ook de chat id nodig. Met deze [link](https://ungineer.github.io/chatid.html) kan je de chat id terugvinden.
+
+- Plak de token in het vakje en klik op 'Get Chat ID'.
+
+[![site.png](https://i.postimg.cc/tTB242bY/site.png)](https://postimg.cc/5YFwP56V)
+
 # 3. Schrijven van de code
 
 Nu de Raspberry Pi is geïnstalleerd kunnen we beginnen met het schrijven van een Python code. Om de code te schrijven hebben we als eerst een editor nodig. Om de code te transporteren op de Raspberry Pi hebben we vervolgens een FTP-client nodig. En als laatste een SSH-client om commando's uit te voeren op de Raspberry Pi.
@@ -160,7 +166,7 @@ Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 
 Hierna kunnen we aan de slag met het downloaden van de start code. Deze wordt bewaard op de Raspberry Pi met de volgende commando:
 
-- wget https://raw.githubusercontent.com/Slauf21/Workshop-IOT-RPI-2022-23/main/Python_bot/bot.py -O ~/Desktop/Workshop.py
+- wget https://raw.githubusercontent.com/Slauf21/Workshop-IOT-RPI-2022-23/main/Python_bot/Workshop.py -O ~/Desktop/Workshop.py
 *Bestand bewaard op bureaublad.*
 
 ## 3.1 FileZilla
