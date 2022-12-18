@@ -230,6 +230,6 @@ Indien je de bestand succesvol hebt kunnen runnen ziet je scherm als volgt uit:
 
 [![ptty-termnl.png](https://i.postimg.cc/GpsgLZht/ptty-termnl.png)](https://postimg.cc/t1pNDv6G)
 
-Nu heb je basis bereikt, om nu de interessante delen toe te voegen in je code klik je op deze link.
+Nu heb je de basis bereikt, om nu de interessante delen toe te voegen in je code klik je op deze link.
 
-Verder zal je hardware aansturen gelijk PiCamera om foto's te nemen, temperatuur metingen uitvoeren enzovoort.
+Verder zal je hardware aansturen gelijk PiCamera om foto's te nemen, temperatuur metingen ui te voeren enzovoort.
