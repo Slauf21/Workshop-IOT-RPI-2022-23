@@ -31,7 +31,7 @@ def hallo(message):
 
 # Commando voor foto
 @bot.message_handler(commands=['foto'])
-def hallo(message):
+def foto(message):
     bot.reply_to(message, "Foto is onderweg...")
     # Capture
     camera.capture('/home/Desktop/image.jpg')

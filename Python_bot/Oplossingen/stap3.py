@@ -36,7 +36,7 @@ def hallo(message):
 
 # Commando voor foto
 @bot.message_handler(commands=['foto'])
-def hallo(message):
+def foto(message):
     bot.reply_to(message, "Foto is onderweg...")
     # Capture
     camera.capture('/home/Desktop/image.jpg')
@@ -45,7 +45,7 @@ def hallo(message):
 
 # Commando voor DHT
 @bot.message_handler(commands=['temperatuur'])
-def hallo(message):
+def temperatuur(message):
     bot.reply_to(message, "Temperatuur wordt gemeten...")
     # Meting
     humidity, temperature = Adafruit_DHT.read_retry(dht_sensor, gpio_sensor)

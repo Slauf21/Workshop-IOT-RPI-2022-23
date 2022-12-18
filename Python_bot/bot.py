@@ -45,7 +45,7 @@ def hallo(message):
 
 # Commando voor foto
 @bot.message_handler(commands=['foto'])
-def hallo(message):
+def foto(message):
     bot.reply_to(message, "Foto is onderweg...")
     # Capture
     camera.capture('/home/pem/Desktop/pem_python/image.jpg')
@@ -54,7 +54,7 @@ def hallo(message):
     
 # Commando voor DHT
 @bot.message_handler(commands=['temperatuur'])
-def hallo(message):
+def temperatuur(message):
     bot.reply_to(message, "Temperatuur wordt gemeten...")
     # Meting
     humidity, temperature = Adafruit_DHT.read_retry(dht_sensor, gpio_sensor)
@@ -63,30 +63,30 @@ def hallo(message):
 
 # Commando voor aanzetten relais
 @bot.message_handler(commands=['relais_aan'])
-def hallo(message):
+def relais_aan(message):
     bot.reply_to(message, "Relais wordt aangezet")
     GPIO.output(gpio_relais, GPIO.HIGH)
 
 # Commando voor uitzetten relais
 @bot.message_handler(commands=['relais_uit'])
-def hallo(message):
+def relais_uit(message):
     bot.reply_to(message, "Relais wordt uitgezet")
     GPIO.output(gpio_relais, GPIO.LOW)
 
 # Commando voor uitzetten relais
 @bot.message_handler(commands=['motion_aan'])
-def hallo(message):
+def motion_aan(message):
     motion_det()
     bot.reply_to(message, "Bewegingssensor wordt aagezet")
 
 # Commando voor uitzetten relais
 @bot.message_handler(commands=['motion_uit'])
-def hallo(message):
+def motion_uit(message):
     bot.reply_to(message, "Bewegingssensor wordt uitgezet")
 
 """# Commando voor luchtkwaliteit
 @bot.message_handler(commands=['luchtkwaliteit'])
-def hallo(message):
+def luchtkwaliteit(message):
     bot.reply_to(message, "Luchtkwaliteit aan het meten.. Resultaat beschikbaar na 15 seconden.")
     t_end = time.time() + 15
     while time.time() < t_end:
