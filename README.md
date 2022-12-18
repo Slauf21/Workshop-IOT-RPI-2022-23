@@ -232,4 +232,4 @@ Indien je de bestand succesvol hebt kunnen runnen ziet je scherm als volgt uit:
 
 Nu heb je de basis bereikt, om nu de interessante delen toe te voegen in je code klik je op deze [link](https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/wiki).
 
-Verder zal je hardware aansturen gelijk PiCamera om foto's te nemen, temperatuurmetingen ui te voeren enzovoort.
+Verder zal je hardware aansturen gelijk PiCamera om foto's te nemen, DHT11 om temperatuurmetingen uit te voeren enzovoort.
