@@ -123,7 +123,11 @@ Indien naam in gebruik kan er nogmaals gevraagd worden om een gebruikersnaam in 
 
 [![token.png](https://i.postimg.cc/PfBK80ry/token.png)](https://postimg.cc/QVJc247K)
 
-Nu de token is gegenereerd hebben we ook de chat id nodig. Met deze [link](https://ungineer.github.io/chatid.html) kan je de chat id terugvinden.
+Nu de token is gegenereerd gaan we niet meet met de BotFather praten, maar met onze eigen bot. In de zoekbalk moet je zoeken naar de gebruikersnaam van je bot. Die voeg je dan toe en druk je op start.
+
+![image](https://user-images.githubusercontent.com/79916416/208381541-434ed268-0e59-4c0b-96ee-08381ae21ad1.png)
+
+We gaan ook de chat id nodig hebben. Met deze [link](https://ungineer.github.io/chatid.html) kan je de chat id terugvinden.
 
 - Plak de token in het vakje en klik op 'Get Chat ID'.
 
