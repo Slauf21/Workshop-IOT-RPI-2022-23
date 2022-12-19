@@ -5,7 +5,7 @@ apt install python3-cffi -y
 apt install -y gpac
 pip3 install telebot
 pip3 install Adafruit_DHT
-apt-get -y install python3-rpi.gpio
+sudo apt-get -y install python3-rpi.gpio
 pip3 install gpiozero
 pip3 install board
 pip3 install adafruit-circuitpython-sgp30
