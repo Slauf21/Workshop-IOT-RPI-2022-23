@@ -15,6 +15,6 @@ apt-get install build-essential python-dev -y
 #apt-get autoclean -y
 systemctl enable ssh
 systemctl start ssh
-raspi-config nonint do_camera 0
+sudo raspi-config nonint do_camera 0
 sudo raspi-config nonint do_spi 0
 reboot
