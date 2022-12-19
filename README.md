@@ -100,7 +100,9 @@ Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren. Kopieer ze uit deze handleiding en plak ze in de putty terminal. Het plakken in een terminal wordt gedaan met de rechter muisknop, i.p.v. de sneltoets ctrl+V. Druk op enter om ze uit te voeren.
 
 - Downloaden script:
-  - wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/d751ddeb24a901cbfb92339efcc60615b5a4963a/Files/install.sh
+```javascript
+wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/d751ddeb24a901cbfb92339efcc60615b5a4963a/Files/install.sh
+```
 - Script uitvoerbaar maken:
   - chmod +x install.sh
 - Starten van script:
