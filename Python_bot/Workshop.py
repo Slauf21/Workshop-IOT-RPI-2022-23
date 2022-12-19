@@ -1,7 +1,7 @@
 # Libs
 import telebot
 import os
-from picamera import PiCamera, Color
+from picamera import PiCamera
 import Adafruit_DHT
 import RPi.GPIO as GPIO
 import time
