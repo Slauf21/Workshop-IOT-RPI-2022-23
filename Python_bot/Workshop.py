@@ -19,3 +19,11 @@ chat_id = ''
 bot = telebot.TeleBot(API_KEY)
 
 print("Bot opgestart met token {}.".format(API_KEY))
+
+# ################################ #
+# VOER HIERONDER JE DECLARARIES IN #
+# ################################ #
+
+# ############################## #
+# VOER HIERONDER JE COMMANDOS IN #
+# ############################## #
