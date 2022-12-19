@@ -48,19 +48,19 @@ Startscherm:
 
 [![rpi-home.png](https://i.postimg.cc/VkX8LyDr/rpi-home.png)](https://postimg.cc/5X9Gnrcb)
 
-- Klik rechtsboven op het wifi-icoontje. Schakel de wifi in en kies voor het netwerk 'wifi.pxl-ea-ict.be'.
+- Klik rechtsboven op het wifi-icoontje. Schakel de wifi in en kies voor je wifi netwerk.
 
 [![rpi-ssid.jpg](https://i.postimg.cc/CxbsvJxp/rpi-ssid.jpg)](https://postimg.cc/HrsMnwM6)
 
-- Na het selecteren van het netwerk komt er in het midden een venster tevoorschijn. Vul hier 'elektronica' als wachtwoord in.
+- Na het selecteren van het netwerk komt er in het midden een venster tevoorschijn. Vul hier het wachtwoord van je netwerk in.
 
 [![rpi-ssid-pass-1.png](https://i.postimg.cc/0QBbp6FH/rpi-ssid-pass-1.png)](https://postimg.cc/7GSH4Lxg)
 
-Nu de Raspberry Pi verbonden is met het netwerk bewaren we het toegewezen IP-adres. Door over het wifi-icoontje te bewegen met de cursor zal er een venster verschijnen. Noteer deze IP-adres.
+Nu de Raspberry Pi verbonden is met het netwerk bewaren we het toegewezen IP-adres. Door over het wifi-icoontje te bewegen met de cursor zal er een venster verschijnen. Noteer deze IP-adres. Wees zeker dat je raspberry pi en je PC verbonden zijn met hetzelfde wifi netwerk.
 
 [![rpi-ssid-pass.png](https://i.postimg.cc/GmJdcwm7/rpi-ssid-pass.png)](https://postimg.cc/k24kcH8K)
 
-*IP-adres: 169.154.146.220, niet overnemen.*
+*Ons IP-adres: 169.154.146.220, niet overnemen.*
 
 ## 1.3. Configureren Raspberry Pi
 Als volgende stap gaan we met een voorgeschreven .sh file de nodige bibliotheken afhalen en functionaliteiten aanzetten van de RPI.
