@@ -44,9 +44,9 @@ def hallo(message):
 def foto(message):
     bot.reply_to(message, "Foto is onderweg...")
     # Capture
-    camera.capture('/home/pem/Desktop/pem_python/image.jpg')
+    camera.capture('/home/Desktop/image.jpg')
     # Foto sturen via telegram
-    bot.send_photo(chat_id, photo=open('/home/pem/Desktop/pem_python/image.jpg', 'rb'))
+    bot.send_photo(chat_id, photo=open('/home/Desktop/image.jpg', 'rb'))
 
 # Commando voor DHT
 @bot.message_handler(commands=['temperatuur'])
