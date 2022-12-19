@@ -2,6 +2,12 @@
 
 Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar op – zijn via een ‘embedded systeem’ verbonden met het internet. Internet of Things (IoT) noemen we dat. Hoe werken die systemen en wat zijn de elementaire bouwstenen om een volwaardig IoT-device te maken? In deze workshop bouwen we een eerste IoT-device. We bouwen een koppeling tussen sociale media (Telegram) en een “thing” met behulp van een Raspberry Pi-computertje verbonden met een temperatuur en luchtvochtigheid sensor, een bewegingssensor, een camera, een lichtsensor en een versnellingssensor. Dit alles doen we op een laagdrempelige manier. Alles is beschikbaar zodat je thuis - met je eigen Raspberry Pi – het werk kan voortzetten, als je dat wil.
 
+Onderstaande linken om de benodigde applicaties te downloaden: <ins>*Indien je van thuis volgt.*</ins>
+
+- Editor: [Notepad++](https://notepad-plus-plus.org/downloads/) (installeer de laatste versie)
+- FTP-client: [FileZilla](https://filezilla-project.org/download.php?type=client)
+- SSH-client: [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (MSI Windows Installer: 64-bit x86:)
+
 **Indien je de workshop volgt mag je beginnen bij [Stap 2](#2-aanmaken-van-telegram-bot).**
 
 # Inhoudstabel
@@ -141,13 +147,7 @@ We gaan ook de chat id nodig hebben. Met deze [link](https://ungineer.github.io/
 
 # 3. Schrijven van de code
 
-Nu de Raspberry Pi is geïnstalleerd kunnen we beginnen met het schrijven van een Python code. Om de code te schrijven hebben we als eerst een editor nodig. Om de code te transporteren op de Raspberry Pi hebben we vervolgens een FTP-client nodig. En als laatste een SSH-client om commando's uit te voeren op de Raspberry Pi.
-
-Onderstaande linken om de nodige te downloaden: <ins>*Indien je van thuis volgt.*</ins>
-
-- Editor: [Notepad++](https://notepad-plus-plus.org/downloads/) (installeer de laatste versie)
-- FTP-client: [FileZilla](https://filezilla-project.org/download.php?type=client)
-- SSH-client: [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (MSI Windows Installer: 64-bit x86:)
+Nu de Raspberry Pi is geïnstalleerd kunnen we beginnen met het schrijven van een Python code. Om de code te schrijven hebben we als eerst een editor nodig. Om de code te transporteren op de Raspberry Pi hebben we vervolgens een FTP-client nodig. En als laatste een SSH-client om commando's uit te voeren op de Raspberry Pi. Deze had je in het begin moeten installeren.
 
 ## 3.1 Putty
 
