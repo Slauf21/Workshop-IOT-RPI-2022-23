@@ -2,7 +2,7 @@
 
 Steeds meer dingen – auto’s, deurbellen, rookmelders, koelkasten, noem maar op – zijn via een ‘embedded systeem’ verbonden met het internet. Internet of Things (IoT) noemen we dat. Hoe werken die systemen en wat zijn de elementaire bouwstenen om een volwaardig IoT-device te maken? In deze workshop bouwen we een eerste IoT-device. We bouwen een koppeling tussen sociale media (Telegram) en een “thing” met behulp van een Raspberry Pi-computertje verbonden met een temperatuur en luchtvochtigheid sensor, een bewegingssensor, een camera, een lichtsensor en een versnellingssensor. Dit alles doen we op een laagdrempelige manier. Alles is beschikbaar zodat je thuis - met je eigen Raspberry Pi – het werk kan voortzetten, als je dat wil.
 
-**Indien je de workshop volgt mag ja beginnen bij [Stap 2](#2-aanmaken-van-telegram-bot)**
+**Indien je de workshop volgt mag je beginnen bij [Stap 2](#2-aanmaken-van-telegram-bot).**
 
 # Inhoudstabel
 
