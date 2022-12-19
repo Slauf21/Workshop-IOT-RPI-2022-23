@@ -75,14 +75,33 @@ Nu de Raspberry Pi verbonden is met het netwerk bewaren we het toegewezen IP-adr
 ## 1.3. Configureren Raspberry Pi
 Als volgende stap gaan we met een voorgeschreven .sh file de nodige bibliotheken afhalen en functionaliteiten aanzetten van de RPI.
 
-Open de terminal op de Raspberry PI door op het terminal icoontje te klikken of door gebruik te maken van de sneltoets ctrl+alt+t
+Open Putty op je PC. Je wordt begroet met het volgende scherm:
 
-[![trml-logo.png](https://i.postimg.cc/JhDjxfZT/trml-logo.png)](https://postimg.cc/KKbKvs9L)
+![image](https://user-images.githubusercontent.com/79916416/208387467-9d18ee83-6757-43b4-8a4d-cefe94e8c32b.png)
 
-Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren.
+Hier moet je bij hostname het ip adres van de raspberry pi ingeven. Het is noodzakelijk dat de PC en de raspberry pi op het zelfde wifi netwerk zitten. Dan voer je als poortnummer 22 in en kies je SSH als connectie type. Dan druk je op **Open**.
+
+- *Mogelijke waarschuwing: klik op 'Accept'*
+
+[![ptty-wrning.png](https://i.postimg.cc/s2Msdnv1/ptty-wrning.png)](https://postimg.cc/R3xjwL1z)
+
+Vervolgens zal je moeten inloggen op de Raspberry Pi. Gebruik de standaard inloggegevens als volgt:
+
+- login as: **pi** (enter)
+- password: **raspberry** (enter)
+
+Als je je eigen login gegevens hebt gekozen, vul je die in.
+
+Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
+
+[![putty.png](https://i.postimg.cc/qMgkYPn0/putty.png)](https://postimg.cc/HVDD8PBP)
+
+*Inloggegevens ter illustratie, niet overnemen.*
+
+Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren. Kopieer ze uit deze handleiding en plak ze in de putty terminal. Het plakken in een terminal wordt gedaan met de rechter muisknop, i.p.v. de sneltoets ctrl+V. Druk op enter om ze uit te voeren.
 
 - Downloaden script:
-  - wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/eb2f729d927f8d215e35f65d29e632d7d2f10b5b/Files/install.sh
+  - wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/d751ddeb24a901cbfb92339efcc60615b5a4963a/Files/install.sh
 - Script uitvoerbaar maken:
   - chmod +x install.sh
 - Starten van script:
@@ -165,10 +184,6 @@ Vervolgens zal je moeten inloggen op de Raspberry Pi. Gebruik de standaard inlog
 - password: **raspberry** (enter)
 
 <br>
-
-- *Mogelijke waarschuwing: klik op 'Accept'*
-
-[![ptty-wrning.png](https://i.postimg.cc/s2Msdnv1/ptty-wrning.png)](https://postimg.cc/R3xjwL1z)
 
 Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 
