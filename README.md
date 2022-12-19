@@ -82,7 +82,7 @@ Open de terminal op de Raspberry PI door op het terminal icoontje te klikken of 
 Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren.
 
 - Downloaden script:
-  - wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/d751ddeb24a901cbfb92339efcc60615b5a4963a/Files/install.sh
+  - wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/eb2f729d927f8d215e35f65d29e632d7d2f10b5b/Files/install.sh
 - Script uitvoerbaar maken:
   - chmod +x install.sh
 - Starten van script:
