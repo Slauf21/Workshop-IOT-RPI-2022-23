@@ -125,7 +125,7 @@ Indien naam in gebruik kan er nogmaals gevraagd worden om een gebruikersnaam in 
 
 Nu de token is gegenereerd gaan we niet meet met de BotFather praten, maar met onze eigen bot.
 
-- In de zoekbalk moet je zoeken naar de gebruikersnaam van je bot. Die voeg je dan toe en druk je op start.
+- In de zoekbalk moet je zoeken naar de gebruikersnaam van je bot (bij ons geval is dat "slauf_bot"). Die voeg je dan toe en druk je op start.
 
 ![image](https://user-images.githubusercontent.com/79916416/208381541-434ed268-0e59-4c0b-96ee-08381ae21ad1.png)
 
