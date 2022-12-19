@@ -70,7 +70,9 @@ Nu de Raspberry Pi verbonden is met het netwerk bewaren we het toegewezen IP-adr
 
 ## 1.3. Configureren Raspberry Pi
 
-Op de raspberry pi moeten we nu SSH aanzetten. Dit wordt gedaan door linksboven op de raspberry pi symbool te klikken en dan 
+Op de raspberry pi moeten we nu SSH aanzetten. Dit wordt gedaan door linksboven op de raspberry pi symbool te klikken en dan **Preferences** en dan **Raspberry Pi Configuration**. Onder de interfaces tab click je dan ssh aan.
+
+![image](https://user-images.githubusercontent.com/79916416/208395569-9db1229d-5802-40b7-af4e-90d1464e7c44.png)
 
 Als volgende stap gaan we met een voorgeschreven .sh file de nodige bibliotheken afhalen en functionaliteiten aanzetten van de RPI.
 
@@ -101,7 +103,7 @@ Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens ui
 
 - Downloaden script:
 ```javascript
-wget https://github.com/Slauf21/Workshop-IOT-RPI-2022-23/blob/d751ddeb24a901cbfb92339efcc60615b5a4963a/Files/install.sh
+wget https://raw.githubusercontent.com/Slauf21/Workshop-IOT-RPI-2022-23/main/Files/install.sh
 ```
 - Script uitvoerbaar maken:
   - chmod +x install.sh
