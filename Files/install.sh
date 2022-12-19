@@ -20,5 +20,5 @@ mkdir /home/pi/Desktop/IOT_Workshop
 chown pi:pi /home/pi/Desktop/IOT_Workshop
 cd /home/pi/Desktop/IOT_Workshop
 touch Workshop.py
-chown pi:pi /home/pi/Desktop/IOT_Workshop/Workshop.py
+chown pi:pi /home/pi/Desktop/Workshop.py
 reboot
