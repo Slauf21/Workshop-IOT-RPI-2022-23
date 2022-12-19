@@ -193,7 +193,9 @@ Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 
 Hierna kunnen we aan de slag met het downloaden van de start code. Deze wordt bewaard op de Raspberry Pi met de volgende commando:
 
-- wget https://raw.githubusercontent.com/Slauf21/Workshop-IOT-RPI-2022-23/main/Python_bot/Workshop.py -O ~/Desktop/Workshop.py
+```javascript
+wget https://raw.githubusercontent.com/Slauf21/Workshop-IOT-RPI-2022-23/main/Python_bot/Workshop.py -O ~/Desktop/Workshop.py
+```
 
 *Bestand bewaard op bureaublad.*
 
