@@ -4,6 +4,7 @@ apt install python3-pip -y
 apt install python3-cffi -y 
 apt install -y gpac
 pip3 install telebot
+pip3 install pyTelegramBotAPI
 pip3 install Adafruit_DHT
 sudo apt-get -y install python3-rpi.gpio
 pip3 install gpiozero
