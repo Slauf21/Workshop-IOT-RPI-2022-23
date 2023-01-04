@@ -77,7 +77,7 @@ def relais_uit(message):
 @bot.message_handler(commands=['motion_aan'])
 def motion_aan(message):
     motion_det()
-    bot.reply_to(message, "Bewegingssensor wordt aagezet")
+    bot.reply_to(message, "Bewegingssensor wordt aangezet")
 
 # Commando voor uitzetten relais
 @bot.message_handler(commands=['motion_uit'])
