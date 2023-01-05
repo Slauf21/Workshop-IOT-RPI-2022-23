@@ -80,7 +80,7 @@ Open Putty op je PC. Je wordt begroet met het volgende scherm:
 
 ![image](https://user-images.githubusercontent.com/79916416/208387467-9d18ee83-6757-43b4-8a4d-cefe94e8c32b.png)
 
-Hier moet je bij hostname het ip adres van de raspberry pi ingeven. Het is noodzakelijk dat de PC en de raspberry pi op het zelfde wifi netwerk zitten. Dan voer je als poortnummer 22 in en kies je SSH als connectie type. Dan druk je op **Open**.
+Hier moet je bij hostname het ip adres van de raspberry pi ingeven. Het is noodzakelijk dat de PC en de raspberry pi op hetzelfde wifi netwerk zitten. Dan voer je als poortnummer 22 in en kies je SSH als connectie type. Dan druk je op **Open**.
 
 - *Mogelijke waarschuwing: klik op 'Accept'*
 
@@ -93,13 +93,15 @@ Vervolgens zal je moeten inloggen op de Raspberry Pi. Gebruik de standaard inlog
 
 Als je je eigen login gegevens hebt gekozen, vul je die in.
 
+*Telkens wanneer je opnieuw wilt inloggen met Putty moet je deze stappen herhalen.*
+
 Indien je succesvol bent ingelogd ziet je terminal als volgt uit:
 
 [![putty.png](https://i.postimg.cc/qMgkYPn0/putty.png)](https://postimg.cc/HVDD8PBP)
 
 *Inloggegevens ter illustratie, niet overnemen.*
 
-Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren. Kopieer ze uit deze handleiding en plak ze in de putty terminal. Het plakken in een terminal wordt gedaan met de rechter muisknop, i.p.v. de sneltoets ctrl+V. Druk op enter om ze uit te voeren.
+Met onderstaande commando's gaan we als eerst de .sh downloaden en vervolgens uitvoeren. Kopieer ze uit deze handleiding en plak ze in de putty terminal. Het plakken in een terminal wordt gedaan met de rechtermuisknop, i.p.v. de sneltoets ctrl+V. Druk op enter om ze uit te voeren.
 
 - Downloaden script:
 ```javascript
@@ -113,6 +115,32 @@ wget https://raw.githubusercontent.com/Slauf21/Workshop-IOT-RPI-2022-23/main/Fil
 *Kopieer deze commando's individueel en plak met rechtermuisknop in de terminal.*
 
 Vervolgens zal de RPI herstarten en kan er verder gegaan worden met de volgende stap.
+
+*Log opnieuw in via Putty.*
+
+Om nu de camera te activeren voor gebruik voer je volgende commando's in Putty.
+
+- sudo raspi-config
+
+[![rpi-config.png](https://i.postimg.cc/gkhFvMgw/rpi-config.png)](https://postimg.cc/LnmbSVKR)
+
+- Schuif naar onder met pijltjes op het toetsenbord tot 'Interface Options' en klik op enter
+
+[![intfce.png](https://i.postimg.cc/6p09vjQr/intfce.png)](https://postimg.cc/QFFGLq1C)
+
+- Klik op enter waar 'Legacy Camera' vermeld staat
+
+[![lcam.png](https://i.postimg.cc/k4WY2ZJ9/lcam.png)](https://postimg.cc/CBLstcn6)
+
+- Klik nu weer op enter om de camera te activeren
+
+[![enble.png](https://i.postimg.cc/bYCkQgZj/enble.png)](https://postimg.cc/hhmXn98C)
+
+- Klik een laatste keer op enter om de waarschuwing te sluiten
+
+[![wrng.png](https://i.postimg.cc/FKp7hFcQ/wrng.png)](https://postimg.cc/944WphJx)
+
+Om de configuratiescherm af te sluiten toets je 'Esc' (linksboven op het toetsenbord) in.
 
 # 2. Aanmaken van Telegram Bot
 
