@@ -73,16 +73,11 @@ def relais_uit(message):
     bot.reply_to(message, "Relais wordt uitgezet")
     GPIO.output(gpio_relais, GPIO.LOW)
 
-# Commando voor uitzetten relais
+# Commando voor aanzetten bewegingssensor
 @bot.message_handler(commands=['motion_aan'])
 def motion_aan(message):
-    motion_det()
     bot.reply_to(message, "Bewegingssensor wordt aangezet")
-
-# Commando voor uitzetten relais
-@bot.message_handler(commands=['motion_uit'])
-def motion_uit(message):
-    bot.reply_to(message, "Bewegingssensor wordt uitgezet")
+    motion_det()
 
 """# Commando voor luchtkwaliteit
 @bot.message_handler(commands=['luchtkwaliteit'])
@@ -93,18 +88,14 @@ def luchtkwaliteit(message):
         eCO2, TVOC = sgp30.iaq_measure()
     bot.send_message(chat_id, text = "eCO2 = %d ppm \t TVOC = %d ppb" % (eCO2, TVOC))"""
 
-# Aansturen beweginssensor
+# Aansturen bewegingssensor
 def motion_det():
-    try:
-        while True:
-            if pir.motion_detected:
-                bot.send_message(chat_id, text = "Beweging gedetecteerd -> dief!!!!!!!" + " " + (time.strftime("%H:%M:%S")))
-                time.sleep(3)
-            else:
-                time.sleep(3)
-
-    except KeyboardInterrupt:
-        print('interrupted!')
+    while True:
+        if pir.motion_detected:
+            bot.send_message(chat_id, text = "Beweging gedetecteerd! -> " + " " + (time.strftime("%H:%M:%S")))
+            time.sleep(3)
+        else:
+            time.sleep(3)
 
 
 bot.polling()

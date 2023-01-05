@@ -11,9 +11,7 @@ import board
 import busio
 import adafruit_sgp30
 
-# Voer hier token in:
 API_KEY = ''
-# Voer hier chat id in:
 chat_id = ''
 
 bot = telebot.TeleBot(API_KEY)
@@ -28,6 +26,14 @@ camera.resolution = (640,480)
 dht_sensor = Adafruit_DHT.DHT11
 # GPIO voor dht sensor
 gpio_sensor = 18
+
+# Relais declareren
+GPIO.setmode(GPIO.BCM)
+gpio_relais = 21
+GPIO.setup(gpio_relais, GPIO.OUT)
+
+# Bewegingssensor declareren
+pir = MotionSensor(24)
 
 # Commando voor simpele reply
 @bot.message_handler(commands=['hallo'])
@@ -51,5 +57,32 @@ def temperatuur(message):
     humidity, temperature = Adafruit_DHT.read_retry(dht_sensor, gpio_sensor)
     # Meting sturen via telegram
     bot.reply_to(message, 'Temp={0:0.1f}°C  Humidity={1:0.1f}%'.format(temperature, humidity))
+
+# Commando voor aanzetten relais
+@bot.message_handler(commands=['relais_aan'])
+def relais_aan(message):
+    bot.reply_to(message, "Relais wordt aangezet")
+    GPIO.output(gpio_relais, GPIO.HIGH)
+
+# Commando voor uitzetten relais
+@bot.message_handler(commands=['relais_uit'])
+def relais_uit(message):
+    bot.reply_to(message, "Relais wordt uitgezet")
+    GPIO.output(gpio_relais, GPIO.LOW)
+
+# Commando voor aanzetten bewegingssensor
+@bot.message_handler(commands=['motion_aan'])
+def motion_aan(message):
+    bot.reply_to(message, "Bewegingssensor wordt aangezet")
+    motion_det()
+
+# Aansturen bewegingssensor
+def motion_det():
+    while True:
+        if pir.motion_detected:
+            bot.send_message(chat_id, text = "Beweging gedetecteerd! -> " + " " + (time.strftime("%H:%M:%S")))
+            time.sleep(3)
+        else:
+            time.sleep(3)
 
 bot.polling()
