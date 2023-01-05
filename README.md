@@ -140,7 +140,7 @@ Om nu de camera te activeren voor gebruik voer je volgende commando's in Putty.
 
 [![wrng.png](https://i.postimg.cc/FKp7hFcQ/wrng.png)](https://postimg.cc/944WphJx)
 
-Om de configuratiescherm af te sluiten toets je 'Esc' (linksboven op het toetsenbord) in.
+Om het configuratiescherm af te sluiten toets je 'Esc' (linksboven op het toetsenbord) in.
 
 # 2. Aanmaken van Telegram Bot
 
