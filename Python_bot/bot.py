@@ -11,8 +11,8 @@ import board
 import busio
 import adafruit_sgp30
 
-API_KEY = '5574596927:AAE4WXBSZbe0N6eIdlxHIfKe32hQfjJEThE'
-chat_id = '5452220589'
+API_KEY = ''
+chat_id = ''
 
 bot = telebot.TeleBot(API_KEY)
 
